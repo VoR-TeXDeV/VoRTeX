@@ -1,5 +1,5 @@
 ------------------------------------------------
--- This Source Was Developed By @OMMO10.--
+-- This Source Was Developed By @aanaaa.--
 --   This Is The Source Channel @VoRTeX .   --
 --                - VoRTeX -                 --
 --        -- https://t.me/vortex_dev --         --
@@ -589,8 +589,8 @@ vardump(data)
 end ,nil) 
 end
 --     Source VoRTeX     --
-local AbsRank = function(msg) if SudoId(msg.sender_user_id_) then VoRTeXTEAM  = "المطور" elseif SecondSudo(msg) then VoRTeXTEAM = "المطور" elseif SudoBot(msg) then VoRTeXTEAM = "المطور" elseif ManagerAll(msg) then VoRTeXTEAM = "المدير" elseif AdminAll(msg) then VoRTeXTEAM = "الادمن" elseif AbsConstructor(msg) then VoRTeXTEAM = "المالك" elseif BasicConstructor(msg) then VoRTeXTEAM = "المنشئ" elseif Constructor(msg) then VoRTeXTEAM = "المنشئ" elseif Manager(msg) then VoRTeXTEAM = "المدير" elseif Admin(msg) then VoRTeXTEAM = "الادمن" else VoRTeXTEAM = "العضو" end return VoRTeXTEAM end
-function IdRank(user_id,chat_id) if tonumber(user_id) == tonumber(1349732568) then VoRTeXTEAM = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(VoRTeX) then VoRTeXTEAM = 'البوت' elseif SudoId(user_id) then VoRTeXTEAM = 'المطور الاساسي' elseif DevAbs:sismember(VoRTeX..'Abs:SecondSudo:', user_id) then VoRTeXTEAM = 'المطور الثانوي' elseif DevAbs:sismember(VoRTeX..'Abs:SudoBot:', user_id) then VoRTeXTEAM = DevAbs:get(VoRTeX.."Abs:SudoBot:Rd"..chat_id) or 'المطور' elseif DevAbs:sismember(VoRTeX..'Abs:ManagerAll:', user_id) then VoRTeXTEAM = DevAbs:get(VoRTeX.."Abs:Managers:Rd"..chat_id) or 'المدير العام' elseif DevAbs:sismember(VoRTeX..'Abs:AdminAll:', user_id) then VoRTeXTEAM = DevAbs:get(VoRTeX.."Abs:Admins:Rd"..chat_id) or 'الادمن العام' elseif DevAbs:sismember(VoRTeX..'Abs:VipAll:', user_id) then VoRTeXTEAM = DevAbs:get(VoRTeX.."Abs:VipMem:Rd"..chat_id) or 'المميز العام' elseif DevAbs:sismember(VoRTeX..'Abs:AbsConstructor:'..chat_id, user_id) then VoRTeXTEAM = 'المالك' elseif DevAbs:sismember(VoRTeX..'Abs:BasicConstructor:'..chat_id, user_id) then VoRTeXTEAM = DevAbs:get(VoRTeX.."Abs:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevAbs:sismember(VoRTeX..'Abs:Constructor:'..chat_id, user_id) then VoRTeXTEAM = DevAbs:get(VoRTeX.."Abs:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevAbs:sismember(VoRTeX..'Abs:Managers:'..chat_id, user_id) then VoRTeXTEAM = DevAbs:get(VoRTeX.."Abs:Managers:Rd"..chat_id) or 'المدير' elseif DevAbs:sismember(VoRTeX..'Abs:Admins:'..chat_id, user_id) then VoRTeXTEAM = DevAbs:get(VoRTeX.."Abs:Admins:Rd"..chat_id) or 'الادمن' elseif DevAbs:sismember(VoRTeX..'Abs:VipMem:'..chat_id, user_id) then  VoRTeXTEAM = DevAbs:get(VoRTeX.."Abs:VipMem:Rd"..chat_id) or 'المميز' elseif DevAbs:sismember(VoRTeX..'Abs:Cleaner:'..chat_id, user_id) then  VoRTeXTEAM = DevAbs:get(VoRTeX.."Abs:Cleaner:Rd"..chat_id) or 'المنظف' else VoRTeXTEAM = DevAbs:get(VoRTeX.."Abs:mem:Rd"..chat_id) or 'العضو' end return VoRTeXTEAM end
+local AbsRank = function(msg) if SudoId(msg.sender_user_id_) then VoRTeX_dev  = "المطور" elseif SecondSudo(msg) then VoRTeX_dev = "المطور" elseif SudoBot(msg) then VoRTeX_dev = "المطور" elseif ManagerAll(msg) then VoRTeX_dev = "المدير" elseif AdminAll(msg) then VoRTeX_dev = "الادمن" elseif AbsConstructor(msg) then VoRTeX_dev = "المالك" elseif BasicConstructor(msg) then VoRTeX_dev = "المنشئ" elseif Constructor(msg) then VoRTeX_dev = "المنشئ" elseif Manager(msg) then VoRTeX_dev = "المدير" elseif Admin(msg) then VoRTeX_dev = "الادمن" else VoRTeX_dev = "العضو" end return VoRTeX_dev end
+function IdRank(user_id,chat_id) if tonumber(user_id) == tonumber(1349732568) then VoRTeX_dev = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(VoRTeX) then VoRTeX_dev = 'البوت' elseif SudoId(user_id) then VoRTeX_dev = 'المطور الاساسي' elseif DevAbs:sismember(VoRTeX..'Abs:SecondSudo:', user_id) then VoRTeX_dev = 'المطور الثانوي' elseif DevAbs:sismember(VoRTeX..'Abs:SudoBot:', user_id) then VoRTeX_dev = DevAbs:get(VoRTeX.."Abs:SudoBot:Rd"..chat_id) or 'المطور' elseif DevAbs:sismember(VoRTeX..'Abs:ManagerAll:', user_id) then VoRTeX_dev = DevAbs:get(VoRTeX.."Abs:Managers:Rd"..chat_id) or 'المدير العام' elseif DevAbs:sismember(VoRTeX..'Abs:AdminAll:', user_id) then VoRTeX_dev = DevAbs:get(VoRTeX.."Abs:Admins:Rd"..chat_id) or 'الادمن العام' elseif DevAbs:sismember(VoRTeX..'Abs:VipAll:', user_id) then VoRTeX_dev = DevAbs:get(VoRTeX.."Abs:VipMem:Rd"..chat_id) or 'المميز العام' elseif DevAbs:sismember(VoRTeX..'Abs:AbsConstructor:'..chat_id, user_id) then VoRTeX_dev = 'المالك' elseif DevAbs:sismember(VoRTeX..'Abs:BasicConstructor:'..chat_id, user_id) then VoRTeX_dev = DevAbs:get(VoRTeX.."Abs:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevAbs:sismember(VoRTeX..'Abs:Constructor:'..chat_id, user_id) then VoRTeX_dev = DevAbs:get(VoRTeX.."Abs:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevAbs:sismember(VoRTeX..'Abs:Managers:'..chat_id, user_id) then VoRTeX_dev = DevAbs:get(VoRTeX.."Abs:Managers:Rd"..chat_id) or 'المدير' elseif DevAbs:sismember(VoRTeX..'Abs:Admins:'..chat_id, user_id) then VoRTeX_dev = DevAbs:get(VoRTeX.."Abs:Admins:Rd"..chat_id) or 'الادمن' elseif DevAbs:sismember(VoRTeX..'Abs:VipMem:'..chat_id, user_id) then  VoRTeX_dev = DevAbs:get(VoRTeX.."Abs:VipMem:Rd"..chat_id) or 'المميز' elseif DevAbs:sismember(VoRTeX..'Abs:Cleaner:'..chat_id, user_id) then  VoRTeX_dev = DevAbs:get(VoRTeX.."Abs:Cleaner:Rd"..chat_id) or 'المنظف' else VoRTeX_dev = DevAbs:get(VoRTeX.."Abs:mem:Rd"..chat_id) or 'العضو' end return VoRTeX_dev end
 --     Source VoRTeX     --
 function RankChecking(user_id,chat_id)
 if SudoId(user_id) then
@@ -1846,13 +1846,13 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, Start_Source, 1, 'md')
 return false
 end
 if text == 'تفعيل التواصل' or text == '↫ تفعيل التواصل ⌁' then   
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل التواصل بنجاح'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل التواصل بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX..'Abs:Texting:Pv') 
 end
 if text == 'تعطيل التواصل' or text == '↫ تعطيل التواصل ⌁' then  
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل التواصل بنجاح'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل التواصل بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX..'Abs:Texting:Pv',true) 
 end
 end
@@ -2244,8 +2244,8 @@ end
 end
 if text and not DevAbs:get(VoRTeX..'Abs:Add:GpRedod'..msg.sender_user_id_..msg.chat_id_) then
 if DevAbs:sismember(VoRTeX..'Abs:Manager:GpRedod'..msg.chat_id_,text) then
-local VoRTeXTEAM =  DevAbs:smembers(VoRTeX..'Abs:Text:GpTexts'..text..msg.chat_id_)
-Dev_Abs(msg.chat_id_, msg.id_, 1, '['..VoRTeXTEAM[math.random(#VoRTeXTEAM)]..']' , 1, 'md')  
+local VoRTeX_dev =  DevAbs:smembers(VoRTeX..'Abs:Text:GpTexts'..text..msg.chat_id_)
+Dev_Abs(msg.chat_id_, msg.id_, 1, '['..VoRTeX_dev[math.random(#VoRTeX_dev)]..']' , 1, 'md')  
 end
 end
 --     Source VoRTeX     --
@@ -2322,7 +2322,7 @@ if DevAbs:get(VoRTeX..'Abs:Stecker:GpRed'..msg.content_.text_..msg.chat_id_) the
 sendSticker(msg.chat_id_, msg.id_, 0, 1,nil, DevAbs:get(VoRTeX..'Abs:Stecker:GpRed'..msg.content_.text_..msg.chat_id_))
 end
 if DevAbs:get(VoRTeX..'Abs:Text:GpRed'..msg.content_.text_..msg.chat_id_) then
-function VoRTeXTEAM(extra,result,success)
+function VoRTeX_dev(extra,result,success)
 if result.username_ then username = '[@'..result.username_..']' else username = 'لا يوجد' end
 local edit_msg = DevAbs:get(VoRTeX..'Abs:EditMsg'..msg.chat_id_..msg.sender_user_id_) or 0
 local user_msgs = DevAbs:get(VoRTeX..'Abs:UsersMsgs'..msg.chat_id_..':'..msg.sender_user_id_)
@@ -2335,7 +2335,7 @@ local Text = Text:gsub('#msgs',(user_msgs or 'لا يوجد'))
 local Text = Text:gsub('#stast',(IdRank(msg.sender_user_id_, msg.chat_id_) or 'لا يوجد'))
 send(msg.chat_id_,msg.id_,Text)
 end
-getUser(msg.sender_user_id_, VoRTeXTEAM)
+getUser(msg.sender_user_id_, VoRTeX_dev)
 end
 end
 --     Source VoRTeX     --
@@ -2417,7 +2417,7 @@ if DevAbs:get(VoRTeX.."Abs:Stecker:AllRed"..msg.content_.text_) then
 sendSticker(msg.chat_id_, msg.id_, 0, 1,nil, DevAbs:get(VoRTeX.."Abs:Stecker:AllRed"..msg.content_.text_))
 end
 if DevAbs:get(VoRTeX.."Abs:Text:AllRed"..msg.content_.text_) then
-function VoRTeXTEAM(extra,result,success)
+function VoRTeX_dev(extra,result,success)
 if result.username_ then username = '[@'..result.username_..']' else username = 'لا يوجد' end
 local edit_msg = DevAbs:get(VoRTeX..'Abs:EditMsg'..msg.chat_id_..msg.sender_user_id_) or 0
 local user_msgs = DevAbs:get(VoRTeX..'Abs:UsersMsgs'..msg.chat_id_..':'..msg.sender_user_id_)
@@ -2430,7 +2430,7 @@ local Text = Text:gsub('#msgs',(user_msgs or 'لا يوجد'))
 local Text = Text:gsub('#stast',(IdRank(msg.sender_user_id_, msg.chat_id_) or 'لا يوجد'))
 send(msg.chat_id_,msg.id_,Text)
 end
-getUser(msg.sender_user_id_, VoRTeXTEAM)
+getUser(msg.sender_user_id_, VoRTeX_dev)
 end
 end 
 --     Source VoRTeX     --
@@ -3076,33 +3076,33 @@ end
 local msg = data.message_
 text = msg.content_.text_
 if text and Constructor(msg) then 
-if DevAbs:get('VoRTeXTEAM:'..VoRTeX.."numadd:user"..msg.chat_id_.."" .. msg.sender_user_id_) then 
+if DevAbs:get('VoRTeX_dev:'..VoRTeX.."numadd:user"..msg.chat_id_.."" .. msg.sender_user_id_) then 
 if text and text:match("^الغاء$") then 
-DevAbs:del('VoRTeXTEAM:'..VoRTeX..'id:user'..msg.chat_id_)  
+DevAbs:del('VoRTeX_dev:'..VoRTeX..'id:user'..msg.chat_id_)  
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙تم الغاء الامر', 1, 'md')
-DevAbs:del('VoRTeXTEAM:'..VoRTeX.."numadd:user"..msg.chat_id_.."" .. msg.sender_user_id_)  
+DevAbs:del('VoRTeX_dev:'..VoRTeX.."numadd:user"..msg.chat_id_.."" .. msg.sender_user_id_)  
 return false  end 
-DevAbs:del('VoRTeXTEAM:'..VoRTeX.."numadd:user"..msg.chat_id_.."" .. msg.sender_user_id_)  
+DevAbs:del('VoRTeX_dev:'..VoRTeX.."numadd:user"..msg.chat_id_.."" .. msg.sender_user_id_)  
 local numadded = string.match(text, "(%d+)") 
-local iduserr = DevAbs:get('VoRTeXTEAM:'..VoRTeX..'id:user'..msg.chat_id_)  
+local iduserr = DevAbs:get('VoRTeX_dev:'..VoRTeX..'id:user'..msg.chat_id_)  
 DevAbs:incrby(VoRTeX..'Abs:UsersMsgs'..msg.chat_id_..':'..iduserr,numadded)
 Dev_Abs(msg.chat_id_, msg.id_,  1, "⌁︙تم اضافة "..numadded..' رساله', 1, 'md')
-DevAbs:del('VoRTeXTEAM:'..VoRTeX..'id:user'..msg.chat_id_) 
+DevAbs:del('VoRTeX_dev:'..VoRTeX..'id:user'..msg.chat_id_) 
 end
 end
 if text and Constructor(msg) then 
-if DevAbs:get('VoRTeXTEAM:'..VoRTeX.."nmadd:user"..msg.chat_id_.."" .. msg.sender_user_id_) then 
+if DevAbs:get('VoRTeX_dev:'..VoRTeX.."nmadd:user"..msg.chat_id_.."" .. msg.sender_user_id_) then 
 if text and text:match("^الغاء$") then 
-DevAbs:del('VoRTeXTEAM:'..VoRTeX..'ids:user'..msg.chat_id_)  
+DevAbs:del('VoRTeX_dev:'..VoRTeX..'ids:user'..msg.chat_id_)  
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙تم الغاء الامر', 1, 'md')
-DevAbs:del('VoRTeXTEAM:'..VoRTeX.."nmadd:user"..msg.chat_id_.."" .. msg.sender_user_id_)  
+DevAbs:del('VoRTeX_dev:'..VoRTeX.."nmadd:user"..msg.chat_id_.."" .. msg.sender_user_id_)  
 return false  end 
-DevAbs:del('VoRTeXTEAM:'..VoRTeX.."nmadd:user"..msg.chat_id_.."" .. msg.sender_user_id_)  
+DevAbs:del('VoRTeX_dev:'..VoRTeX.."nmadd:user"..msg.chat_id_.."" .. msg.sender_user_id_)  
 local numadded = string.match(text, "(%d+)") 
-local iduserr = DevAbs:get('VoRTeXTEAM:'..VoRTeX..'ids:user'..msg.chat_id_)  
+local iduserr = DevAbs:get('VoRTeX_dev:'..VoRTeX..'ids:user'..msg.chat_id_)  
 DevAbs:incrby(VoRTeX..'Abs:GamesNumber'..msg.chat_id_..iduserr,numadded)  
 Dev_Abs(msg.chat_id_, msg.id_,  1, "⌁︙تم اضافة "..numadded..' نقطه', 1, 'md')
-DevAbs:del('VoRTeXTEAM:'..VoRTeX..'ids:user'..msg.chat_id_)  
+DevAbs:del('VoRTeX_dev:'..VoRTeX..'ids:user'..msg.chat_id_)  
 end
 end
 --     Source VoRTeX     --
@@ -3326,20 +3326,20 @@ end
 if ChatType == 'sp' or ChatType == 'gp'  then
 if text == 'بوت' or text == 'بوتت' then 
 NameBot = (DevAbs:get(VoRTeX..'Abs:NameBot') or 'فورتكس')
-local VoRTeXTEAM = {"لتكول بوت اسمي "..NameBot.." 😒🔪","اسمي القميل "..NameBot.." 😚♥️","عندي اسم تره 😒💔","صيحولي "..NameBot.." كافي بوت 😒🔪","انت البوت لك 😒💔"} 
-Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM[math.random(#VoRTeXTEAM)] , 1, 'html') 
+local VoRTeX_dev = {"لتكول بوت اسمي "..NameBot.." 😒🔪","اسمي القميل "..NameBot.." 😚♥️","عندي اسم تره 😒💔","صيحولي "..NameBot.." كافي بوت 😒🔪","انت البوت لك 😒💔"} 
+Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev[math.random(#VoRTeX_dev)] , 1, 'html') 
 return false
 end
 if text == 'اسم البوت' or text == 'البوت شنو اسمه' or text == 'شسمه البوت' or text == 'البوت شسمه' then
 NameBot = (DevAbs:get(VoRTeX..'Abs:NameBot') or 'فورتكس') 
-local VoRTeXTEAM = {"اسمي القميل "..NameBot.." 😚♥️","هلاا يروحيي وياكك "..NameBot.." 😻♥️"} 
-Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM[math.random(#VoRTeXTEAM)] , 1, 'html') 
+local VoRTeX_dev = {"اسمي القميل "..NameBot.." 😚♥️","هلاا يروحيي وياكك "..NameBot.." 😻♥️"} 
+Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev[math.random(#VoRTeX_dev)] , 1, 'html') 
 return false
 end
 if text and text == (DevAbs:get(VoRTeX..'Abs:NameBot') or 'فورتكس') then 
 NameBot = (DevAbs:get(VoRTeX..'Abs:NameBot') or 'فورتكس')
-local VoRTeXTEAM = {'😸♥️ هلا كلبي وياك '..NameBot..' تفضل','ترةه مصختهاا احجيي شرايد 😕😒💔','اطلقق واحدد يصيح '..NameBot..' 😻♥️','خبصتت امنةة شتريدد عااد 🤧😒💔'} 
-Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM[math.random(#VoRTeXTEAM)] , 1, 'html') 
+local VoRTeX_dev = {'😸♥️ هلا كلبي وياك '..NameBot..' تفضل','ترةه مصختهاا احجيي شرايد 😕😒💔','اطلقق واحدد يصيح '..NameBot..' 😻♥️','خبصتت امنةة شتريدد عااد 🤧😒💔'} 
+Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev[math.random(#VoRTeX_dev)] , 1, 'html') 
 return false 
 end
 if text =='نقاطي' and ChCheck(msg) then 
@@ -3474,14 +3474,14 @@ name = string.gsub(name,'⏰','⏰')
 name = string.gsub(name,'📺','📺')
 name = string.gsub(name,'🎚','🎚')
 name = string.gsub(name,'☎️','☎️')
-VoRTeXTEAM = '⌁︙اول واحد يدز هذا السمايل يربح ↫ '..name
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md')
+VoRTeX_dev = '⌁︙اول واحد يدز هذا السمايل يربح ↫ '..name
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md')
 return false
 end end
 if text == DevAbs:get(VoRTeX..'Abs:GameNum'..msg.chat_id_) and not DevAbs:get(VoRTeX..'Abs:Games:Ids'..msg.chat_id_) then
 if not DevAbs:get(VoRTeX..'Abs:Games:Ids'..msg.chat_id_) then 
-VoRTeXTEAM = '⌁︙مبروك لقد ربحت في اللعبه \n⌁︙ارسل ↫ سمايلات للعب مره اخرى'
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md')
+VoRTeX_dev = '⌁︙مبروك لقد ربحت في اللعبه \n⌁︙ارسل ↫ سمايلات للعب مره اخرى'
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md')
 DevAbs:incrby(VoRTeX..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 DevAbs:set(VoRTeX..'Abs:Games:Ids'..msg.chat_id_,true)
@@ -3532,14 +3532,14 @@ name = string.gsub(name,'حاسوب','س ا ح و ب')
 name = string.gsub(name,'انترنيت','ا ت ن ر ن ي ت')
 name = string.gsub(name,'ساحه','ح ا ه س')
 name = string.gsub(name,'جسر','ر ج س')
-VoRTeXTEAM = '⌁︙اول واحد يرتبها يربح ↫ '..name
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md')
+VoRTeX_dev = '⌁︙اول واحد يرتبها يربح ↫ '..name
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md')
 return false
 end end
 if text == DevAbs:get(VoRTeX..'Abs:GameNum'..msg.chat_id_) and not DevAbs:get(VoRTeX..'Abs:Games:Ids'..msg.chat_id_) then
 if not DevAbs:get(VoRTeX..'Abs:Games:Ids'..msg.chat_id_) then 
-VoRTeXTEAM = '⌁︙مبروك لقد ربحت في اللعبه \n⌁︙ارسل ↫ ترتيب للعب مره اخرى'
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md')
+VoRTeX_dev = '⌁︙مبروك لقد ربحت في اللعبه \n⌁︙ارسل ↫ ترتيب للعب مره اخرى'
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md')
 DevAbs:incrby(VoRTeX..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 DevAbs:set(VoRTeX..'Abs:Games:Ids'..msg.chat_id_,true)
@@ -3599,14 +3599,14 @@ name = string.gsub(name,'الثلج','انا ابن الماء فان تركون
 name = string.gsub(name,'الاسفنج','كلي ثقوب ومع ذالك احفض الماء فمن اكون ؟')
 name = string.gsub(name,'الصوت','اسير بلا رجلين ولا ادخل الا بالاذنين فمن انا ؟')
 name = string.gsub(name,'بلم','حامل ومحمول نصف ناشف ونصف مبلول فمن اكون ؟ ')
-VoRTeXTEAM = '⌁︙اول واحد يحلها يربح ↫ '..name
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md')
+VoRTeX_dev = '⌁︙اول واحد يحلها يربح ↫ '..name
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md')
 return false
 end end
 if text == DevAbs:get(VoRTeX..'Abs:GameNum'..msg.chat_id_) and not DevAbs:get(VoRTeX..'Abs:Games:Ids'..msg.chat_id_) then
 if not DevAbs:get(VoRTeX..'Abs:Games:Ids'..msg.chat_id_) then 
-VoRTeXTEAM = '⌁︙مبروك لقد ربحت في اللعبه \n⌁︙ارسل ↫ حزوره للعب مره اخرى'
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md')
+VoRTeX_dev = '⌁︙مبروك لقد ربحت في اللعبه \n⌁︙ارسل ↫ حزوره للعب مره اخرى'
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md')
 DevAbs:incrby(VoRTeX..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 DevAbs:set(VoRTeX..'Abs:Games:Ids'..msg.chat_id_,true)
@@ -3642,14 +3642,14 @@ name = string.gsub(name,'زرافه','🦒')
 name = string.gsub(name,'قنفذ','🦔')
 name = string.gsub(name,'تفاحه','🍎')
 name = string.gsub(name,'باذنجان','🍆')
-VoRTeXTEAM = '⌁︙ما معنى هذا السمايل :؟ ↫ '..name
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md')
+VoRTeX_dev = '⌁︙ما معنى هذا السمايل :؟ ↫ '..name
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md')
 return false
 end end
 if text == DevAbs:get(VoRTeX..'Abs:GameNum2'..msg.chat_id_) and not DevAbs:get(VoRTeX..'Abs:Games:Ids'..msg.chat_id_) then
 if not DevAbs:get(VoRTeX..'Abs:Games:Ids'..msg.chat_id_) then 
-VoRTeXTEAM = '⌁︙مبروك لقد ربحت في اللعبه \n⌁︙ارسل ↫ المعاني للعب مره اخرى'
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md')
+VoRTeX_dev = '⌁︙مبروك لقد ربحت في اللعبه \n⌁︙ارسل ↫ المعاني للعب مره اخرى'
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md')
 DevAbs:incrby(VoRTeX..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 DevAbs:set(VoRTeX..'Abs:Games:Ids'..msg.chat_id_,true)
@@ -3685,14 +3685,14 @@ name = string.gsub(name,'موعطشان','عطشان')
 name = string.gsub(name,'خوش ولد','موخوش ولد')
 name = string.gsub(name,'اني','مطي')
 name = string.gsub(name,'هادئ','عصبي')
-VoRTeXTEAM = '⌁︙ما هو عكس كلمة ↫ '..name
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md')
+VoRTeX_dev = '⌁︙ما هو عكس كلمة ↫ '..name
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md')
 return false
 end end
 if text == DevAbs:get(VoRTeX..'Abs:GameNum3'..msg.chat_id_) and not DevAbs:get(VoRTeX..'Abs:Games:Ids'..msg.chat_id_) then
 if not DevAbs:get(VoRTeX..'Abs:Games:Ids'..msg.chat_id_) then 
-VoRTeXTEAM = '⌁︙مبروك لقد ربحت في اللعبه \n⌁︙ارسل ↫ العكس للعب مره اخرى'
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md')
+VoRTeX_dev = '⌁︙مبروك لقد ربحت في اللعبه \n⌁︙ارسل ↫ العكس للعب مره اخرى'
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md')
 DevAbs:incrby(VoRTeX..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 DevAbs:set(VoRTeX..'Abs:Games:Ids'..msg.chat_id_,true)
@@ -3731,14 +3731,14 @@ name = string.gsub(name,'⌛️','⏳⏳⏳⏳⏳⌛️⏳⏳')
 name = string.gsub(name,'📅','📆📆📆📆📆📅📆📆')
 name = string.gsub(name,'👩‍⚖️','👨‍⚖️👨‍⚖️👨‍⚖️👨‍⚖️👨‍⚖️👩‍⚖️👨‍⚖️👨‍⚖️')
 name = string.gsub(name,'👨‍🎨','👩‍🎨👩‍🎨👨‍🎨👩‍🎨👩‍🎨👩‍🎨👩‍🎨👩‍🎨')
-VoRTeXTEAM = '⌁︙اول واحد يطلع المختلف يربح\n{'..name..'} '
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md')
+VoRTeX_dev = '⌁︙اول واحد يطلع المختلف يربح\n{'..name..'} '
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md')
 return false
 end end
 if text == DevAbs:get(VoRTeX..'Abs:GameNum4'..msg.chat_id_) and not DevAbs:get(VoRTeX..'Abs:Games:Ids'..msg.chat_id_) then
 if not DevAbs:get(VoRTeX..'Abs:Games:Ids'..msg.chat_id_) then 
-VoRTeXTEAM = '⌁︙مبروك لقد ربحت في اللعبه \n⌁︙ارسل ↫ المختلف للعب مره اخرى'
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md')
+VoRTeX_dev = '⌁︙مبروك لقد ربحت في اللعبه \n⌁︙ارسل ↫ المختلف للعب مره اخرى'
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md')
 DevAbs:incrby(VoRTeX..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 DevAbs:set(VoRTeX..'Abs:Games:Ids'..msg.chat_id_,true)
@@ -3771,16 +3771,16 @@ name = string.gsub(name,'شهر','امشي ___ ولا تعبر نهر')
 name = string.gsub(name,'شكه','يامن تعب يامن ___ يا من على الحاضر لكة')
 name = string.gsub(name,'القرد',' ___ بعين امه غزال')
 name = string.gsub(name,'يكحله','اجه ___ عماها')
-VoRTeXTEAM = '⌁︙اكمل المثال التالي ↫ ['..name..']'
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md')
+VoRTeX_dev = '⌁︙اكمل المثال التالي ↫ ['..name..']'
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md')
 return false
 end end
 if text == DevAbs:get(VoRTeX..'Abs:GameNum5'..msg.chat_id_) then
 if not DevAbs:get(VoRTeX..'Abs:Games:Ids'..msg.chat_id_) then 
 DevAbs:incrby(VoRTeX..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 DevAbs:del(VoRTeX..'Abs:GameNum5'..msg.chat_id_)
-VoRTeXTEAM = '⌁︙مبروك لقد ربحت في اللعبه \n⌁︙ارسل ↫ امثله للعب مره اخرى'
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md')
+VoRTeX_dev = '⌁︙مبروك لقد ربحت في اللعبه \n⌁︙ارسل ↫ امثله للعب مره اخرى'
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md')
 end
 DevAbs:set(VoRTeX..'Abs:Games:Ids'..msg.chat_id_,true)
 end  
@@ -3803,16 +3803,16 @@ name = string.gsub(name,'15','25 - 10 = ?')
 name = string.gsub(name,'39','44 - 5 = ?')
 name = string.gsub(name,'5','12 + 1 - 8 = ?')
 name = string.gsub(name,'16','16 + 16 - 16 = ?')
-VoRTeXTEAM = '⌁︙اكمل المعادله التاليه ↫ ⤈\n{'..name..'} '
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md')
+VoRTeX_dev = '⌁︙اكمل المعادله التاليه ↫ ⤈\n{'..name..'} '
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md')
 return false
 end end
 if text == DevAbs:get(VoRTeX..'Abs:GameNum6'..msg.chat_id_) then
 if not DevAbs:get(VoRTeX..'Abs:Games:Ids'..msg.chat_id_) then 
 DevAbs:incrby(VoRTeX..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 DevAbs:del(VoRTeX..'Abs:GameNum6'..msg.chat_id_)
-VoRTeXTEAM = '⌁︙مبروك لقد ربحت في اللعبه \n⌁︙ارسل ↫ رياضيات للعب مره اخرى'
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md')
+VoRTeX_dev = '⌁︙مبروك لقد ربحت في اللعبه \n⌁︙ارسل ↫ رياضيات للعب مره اخرى'
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md')
 end
 DevAbs:set(VoRTeX..'Abs:Games:Ids'..msg.chat_id_,true)
 end  
@@ -3834,16 +3834,16 @@ name = string.gsub(name,'تمساح','crocodile')
 name = string.gsub(name,'شاطئ','Beach')
 name = string.gsub(name,'غبي','Stupid')
 name = string.gsub(name,'صداقه','Friendchip')
-VoRTeXTEAM = '⌁︙ما معنى كلمة ↫ '..name
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md')
+VoRTeX_dev = '⌁︙ما معنى كلمة ↫ '..name
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md')
 return false
 end end
 if text == DevAbs:get(VoRTeX..'Abs:GameNum7'..msg.chat_id_) then
 if not DevAbs:get(VoRTeX..'Abs:Games:Ids'..msg.chat_id_) then 
 DevAbs:incrby(VoRTeX..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 DevAbs:del(VoRTeX..'Abs:GameNum7'..msg.chat_id_)
-VoRTeXTEAM = '⌁︙مبروك لقد ربحت في اللعبه \n⌁︙ارسل ↫ انكليزيه للعب مره اخرى'
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md')
+VoRTeX_dev = '⌁︙مبروك لقد ربحت في اللعبه \n⌁︙ارسل ↫ انكليزيه للعب مره اخرى'
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md')
 end
 DevAbs:set(VoRTeX..'Abs:Games:Ids'..msg.chat_id_,true)
 end  
@@ -3884,16 +3884,16 @@ name = string.gsub(name,'لندن','⌁︙ماهي عاصمه انجلترا ؟\
 name = string.gsub(name,'الانسان','⌁︙ماهو الشئ الذي برأسه سبع فتحات ؟\n1- الهاتف\n2- التلفاز\n3- الانسان')
 name = string.gsub(name,'طوكيو','⌁︙ماهي عاصمه اليابان ؟\n1- بانكول\n2- نيو دلهي\n3- طوكيو')
 name = string.gsub(name,'خديجه','⌁︙من هي زوجه الرسول الاكبر منه سنآ ؟\n1- حفضه\n2- زينب\n3- خديجه')
-VoRTeXTEAM = name..'\n⌁︙ارسل الجواب الصحيح فقط'
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md')
+VoRTeX_dev = name..'\n⌁︙ارسل الجواب الصحيح فقط'
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md')
 return false
 end end
 if text == DevAbs:get(VoRTeX..'Abs:GameNum8'..msg.chat_id_) then
 if not DevAbs:get(VoRTeX..'Abs:Games:Ids'..msg.chat_id_) then 
 DevAbs:incrby(VoRTeX..'Abs:GamesNumber'..msg.chat_id_..msg.sender_user_id_, 1)  
 DevAbs:del(VoRTeX..'Abs:GameNum8'..msg.chat_id_)
-VoRTeXTEAM = '⌁︙مبروك لقد ربحت في اللعبه \n⌁︙ارسل ↫ الاسئله للعب مره اخرى'
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md')
+VoRTeX_dev = '⌁︙مبروك لقد ربحت في اللعبه \n⌁︙ارسل ↫ الاسئله للعب مره اخرى'
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md')
 end
 DevAbs:set(VoRTeX..'Abs:Games:Ids'..msg.chat_id_,true)
 end  
@@ -3990,13 +3990,13 @@ end
 --     Source VoRTeX     --
 if text == 'كت تويت' and ChCheck(msg) then
 if not DevAbs:get(VoRTeX..'Abs:Lock:Games'..msg.chat_id_) then
-local VoRTeXTEAM = {
+local VoRTeX_dev = {
 'آخر مرة زرت مدينة الملاهي؟','آخر مرة أكلت أكلتك المفضّلة؟','الوضع الحالي؟\n‏1. سهران\n‏2. ضايج\n‏3. أتأمل','آخر شيء ضاع منك؟','كلمة أخيرة لشاغل البال؟','طريقتك المعتادة في التخلّص من الطاقة السلبية؟','شهر من أشهر العام له ذكرى جميلة معك؟','كلمة غريبة من لهجتك ومعناها؟🤓','‏- شيء سمعته عالق في ذهنك هاليومين؟','متى تكره الشخص الذي أمامك حتى لو كنت مِن أشد معجبينه؟','‏- أبرز صفة حسنة في صديقك المقرب؟','هل تشعر أن هنالك مَن يُحبك؟','اذا اكتشفت أن أعز أصدقائك يضمر لك السوء، موقفك الصريح؟','أجمل شيء حصل معك خلال هاليوم؟','صِف شعورك وأنت تُحب شخص يُحب غيرك؟👀💔','كلمة لشخص غالي اشتقت إليه؟💕','آخر خبر سعيد، متى وصلك؟','أنا آسف على ....؟','أوصف نفسك بكلمة؟','صريح، مشتاق؟','‏- صريح، هل سبق وخذلت أحدهم ولو عن غير قصد؟','‏- ماذا ستختار من الكلمات لتعبر لنا عن حياتك التي عشتها الى الآن؟💭','‏- فنان/ة تود لو يدعوكَ على مائدة عشاء؟😁❤','‏- تخيّل شيء قد يحدث في المستقبل؟','‏- للشباب | آخر مرة وصلك غزل من فتاة؟🌚','شخص أو صاحب عوضك ونساك مُر الحياة ما اسمه ؟','| اذا شفت حد واعجبك وعندك الجرأه انك تروح وتتعرف عليه ، مقدمة الحديث شو راح تكون ؟.','كم مره تسبح باليوم','نسبة النعاس عندك حاليًا؟','لو فقط مسموح شخص واحد تتابعه فالسناب مين بيكون ؟','يهمك ملابسك تكون ماركة ؟','وش الشيء الي تطلع حرتك فيه و زعلت ؟','عندك أخوان او خوات من الرضاعة؟','عندك معجبين ولا محد درا عنك؟',
 'أطول مدة قضيتها بعيد عن أهلك ؟','لو يجي عيد ميلادك تتوقع يجيك هدية؟','يبان عليك الحزن من " صوتك - ملامحك','وين تشوف نفسك بعد سنتين؟','وش يقولون لك لما تغني ؟','عندك حس فكاهي ولا نفسية؟','كيف تتصرف مع الشخص الفضولي ؟','كيف هي أحوال قلبك؟','حاجة تشوف نفسك مبدع فيها ؟','متى حبيت؟','شيء كل م تذكرته تبتسم ...','العلاقه السريه دايماً تكون حلوه؟','صوت مغني م تحبه','لو يجي عيد ميلادك تتوقع يجيك هدية؟','اذا احد سألك عن شيء م تعرفه تقول م اعرف ولا تتفلسف ؟','مع او ضد : النوم افضل حل لـ مشاكل الحياة؟','مساحة فارغة (..............) اكتب اي شيء تبين','اغرب اسم مر عليك ؟','عمرك كلمت فويس احد غير جنسك؟','اذا غلطت وعرفت انك غلطان تحب تعترف ولا تجحد؟','لو عندك فلوس وش السيارة اللي بتشتريها؟','وش اغبى شيء سويته ؟','شيء من صغرك ماتغير فيك؟','وش نوع الأفلام اللي تحب تتابعه؟','وش نوع الأفلام اللي تحب تتابعه؟','تجامل احد على حساب مصلحتك ؟','تتقبل النصيحة من اي شخص؟','كلمه ماسكه معك الفترة هذي ؟','متى لازم تقول لا ؟','اكثر شيء تحس انه مات ف مجتمعنا؟','تؤمن ان في "حُب من أول نظرة" ولا لا ؟.','تؤمن ان في "حُب من أول نظرة" ولا لا ؟.','هل تعتقد أن هنالك من يراقبك بشغف؟','اشياء اذا سويتها لشخص تدل على انك تحبه كثير ؟','اشياء صعب تتقبلها بسرعه ؟','اقتباس لطيف؟','أكثر جملة أثرت بك في حياتك؟','عندك فوبيا من شيء ؟.',
 'اكثر لونين تحبهم مع بعض؟','أجمل بيت شعر سمعته ...','سبق وراودك شعور أنك لم تعد تعرف نفسك؟','تتوقع فيه احد حاقد عليك ويكرهك ؟','أجمل سنة ميلادية مرت عليك ؟','لو فزعت/ي لصديق/ه وقالك مالك دخل وش بتسوي/ين؟','وش تحس انك تحتاج الفترة هاذي ؟','يومك ضاع على؟','@منشن .. شخص تخاف منه اذا عصب ...','فيلم عالق في ذهنك لا تنساه مِن روعته؟','تختار أن تكون غبي أو قبيح؟','الفلوس او الحب ؟','أجمل بلد في قارة آسيا بنظرك؟','ما الذي يشغل بالك في الفترة الحالية؟','احقر الناس هو من ...','وين نلقى السعاده برايك؟','اشياء تفتخر انك م سويتها ؟','تزعلك الدنيا ويرضيك ؟','وش الحب بنظرك؟','افضل هديه ممكن تناسبك؟','كم في حسابك البنكي ؟','كلمة لشخص أسعدك رغم حزنك في يومٍ من الأيام ؟','عمرك انتقمت من أحد ؟!','ما السيء في هذه الحياة ؟','غنية عندك معاها ذكريات🎵🎻','/','أفضل صفة تحبه بنفسك؟','اكثر وقت تحب تنام فيه ...','أطول مدة نمت فيها كم ساعة؟','أصعب قرار ممكن تتخذه ؟','أفضل صفة تحبه بنفسك؟','اكثر وقت تحب تنام فيه ...','أنت محبوب بين الناس؟ ولاكريه؟','إحساسك في هاللحظة؟','اخر شيء اكلته ؟','تشوف الغيره انانيه او حب؟','اذكر موقف ماتنساه بعمرك؟','اكثر مشاكلك بسبب ؟','اول ماتصحى من النوم مين تكلمه؟','آخر مرة ضحكت من كل قلبك؟','لو الجنسية حسب ملامحك وش بتكون جنسيتك؟','اكثر شيء يرفع ضغطك','اذكر موقف ماتنساه بعمرك؟','لو قالوا لك  تناول صنف واحد فقط من الطعام لمدة شهر .',
 'كيف تشوف الجيل ذا؟','ردة فعلك لو مزح معك شخص م تعرفه ؟','احقر الناس هو من ...','تحب ابوك ولا امك','آخر فيلم مسلسل والتقييم🎥؟','أقبح القبحين في العلاقة: الغدر أو الإهمال🤷🏼؟','كلمة لأقرب شخص لقلبك🤍؟','حط@منشن لشخص وقوله "حركتك مالها داعي"😼!','اذا جاك خبر مفرح اول واحد تعلمه فيه مين💃🏽؟','طبع يمكن يخليك تكره شخص حتى لو كنت تُحبه🙅🏻‍♀️؟','افضل ايام الاسبوع عندك🔖؟','يقولون ان الحياة دروس ، ماهو أقوى درس تعلمته من الحياة🏙؟','تاريخ لن تنساه📅؟','تحب الصيف والا الشتاء❄️☀️؟','شخص تحب تستفزه😈؟','شنو ينادونك وانت صغير (عيارتك)👼🏻؟','عقل يفهمك/ج ولا قلب يحبك/ج❤️؟','اول سفره لك وين رح تكون✈️؟','كم عدد اللي معطيهم بلوك👹؟','نوعية من الأشخاص تتجنبهم في حياتك❌؟','شاركنا صورة او فيديو من تصويرك؟📸','كم من عشره تعطي حظك📩؟','اكثر برنامج تواصل اجتماعي تحبه😎؟','من اي دوله انت🌍؟','اكثر دوله ودك تسافر لها🏞؟','مقولة "نكبر وننسى" هل تؤمن بصحتها🧓🏼؟','تعتقد فيه أحد يراقبك👩🏼‍💻؟','لو بيدك تغير الزمن ، تقدمه ولا ترجعه🕰؟','مشروبك المفضل🍹؟','‏قم بلصق آخر اقتباس نسخته؟💭','كم وزنك/ج طولك/ج؟🌚','كم كان عمرك/ج قبل ٨ سنين😈؟','دوله ندمت انك سافرت لها😁؟','لو قالو لك ٣ أمنيات راح تتحقق عالسريع شنو تكون🧞‍♀️؟','‏- نسبة احتياجك للعزلة من 10📊؟','شخص تحبه حظرك بدون سبب واضح، ردة فعلك🧐؟','مبدأ في الحياة تعتمد عليه دائما🕯؟'
 }  
-Dev_Abs(msg.chat_id_, msg.id_, 1, ''..VoRTeXTEAM[math.random(#VoRTeXTEAM)]..'' , 1, 'md')  
+Dev_Abs(msg.chat_id_, msg.id_, 1, ''..VoRTeX_dev[math.random(#VoRTeX_dev)]..'' , 1, 'md')  
 return false
 end
 end
@@ -4137,8 +4137,8 @@ if not Sudo(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙للمطور الاساسي فقط ', 1, 'md')
 else
 DevAbs:del(VoRTeX..'Abs:ChId')
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل الاشتراك الاجباري'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل الاشتراك الاجباري'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 end
 return false  
 end
@@ -4164,7 +4164,7 @@ end end
 --     Source VoRTeX     --
 if SudoBot(msg) then
 if text == 'اذاعه للكل بالتوجيه' and tonumber(msg.reply_to_message_id_) > 0 then
-function VoRTeXTEAM(extra,result,success)
+function VoRTeX_dev(extra,result,success)
 if DevAbs:get(VoRTeX.."Abs:Send:Bot"..VoRTeX) and not SecondSudo(msg) then 
 send(msg.chat_id_, msg.id_,"⌁︙الاذاعه معطله من قبل المطور الاساسي")
 return false
@@ -4179,7 +4179,7 @@ tdcli_function({ID="ForwardMessages", chat_id_ = v, from_chat_id_ = msg.chat_id_
 end
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙تم اذاعة رسالتك بالتوجيه \n⌁︙‏في ↫ ❨ '..#GpList..' ❩ مجموعه \n⌁︙والى ↫ ❨ '..#PvList..' ❩ مشترك \n ✓', 1, 'md')
 end
-getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),VoRTeXTEAM)
+getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_),VoRTeX_dev)
 end
 end
 --     Source VoRTeX     --
@@ -4195,11 +4195,11 @@ Welcome To Source
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
 ⌁︙[Source Channel](https://t.me/vortex_dev)
 
-⌁︙[Exp Source](https://t.me/EPX_VoRTeX)
+⌁︙[My Channel](https://t.me/tt3at)
 
-⌁︙[Developer](https://t.me/OMMO10)
+⌁︙[Developer](https://t.me/aanaaa)
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-⌁︙[Tws VoRTeX](https://t.me/QADHB_BOT)
+⌁︙[Tws VoRTeX](http://t.me/TWSIBRABOT)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, text, 1, 'md')
 end
@@ -4221,13 +4221,13 @@ end
 --     Source VoRTeX     --
 if text == 'تعطيل اطردني' and Manager(msg) and ChCheck(msg) then
 DevAbs:set(VoRTeX.."Abs:Kick:Me"..msg.chat_id_, true)
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل امر اطردني'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل امر اطردني'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 end
 if text == 'تفعيل اطردني' and Manager(msg) and ChCheck(msg) then
 DevAbs:del(VoRTeX.."Abs:Kick:Me"..msg.chat_id_)
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل امر اطردني'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل امر اطردني'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 end
 --     Source VoRTeX     --
 if text == "نزلني" and ChCheck(msg) then
@@ -4246,23 +4246,23 @@ end
 --     Source VoRTeX     --
 if text == 'تعطيل نزلني' and BasicConstructor(msg) and ChCheck(msg) then
 DevAbs:set(VoRTeX.."Abs:Del:Me"..msg.chat_id_, true)
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل امر نزلني'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل امر نزلني'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 end
 if text == 'تفعيل نزلني' and BasicConstructor(msg) and ChCheck(msg) then
 DevAbs:del(VoRTeX.."Abs:Del:Me"..msg.chat_id_)
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل امر نزلني'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل امر نزلني'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 end
 --     Source VoRTeX     --
 if text and (text == 'تفعيل التاك' or text == 'تفعيل التاك للكل' or text == 'تفعيل تاك للكل') and Admin(msg) and ChCheck(msg) then 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل امر تاك للكل'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل امر تاك للكل'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX..'Abs:Lock:TagAll'..msg.chat_id_)
 end
 if text and (text == 'تعطيل التاك' or text == 'تعطيل التاك للكل' or text == 'تعطيل تاك للكل') and Admin(msg) and ChCheck(msg) then 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل امر تاك للكل'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل امر تاك للكل'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX..'Abs:Lock:TagAll'..msg.chat_id_,true)
 end
 if Admin(msg) then
@@ -4365,7 +4365,7 @@ end
 if text and text:match('^هينه @(.*)') and ChCheck(msg) or text and text:match('^هينها @(.*)') then 
 if not DevAbs:get(VoRTeX..'Abs:Lock:Stupid'..msg.chat_id_) then
 local username = text:match('^هينه @(.*)') or text:match('^هينها @(.*)') 
-function VoRTeXTEAM(extra,result,success)
+function VoRTeX_dev(extra,result,success)
 if result.id_ then  
 if tonumber(result.id_) == tonumber(VoRTeX) then  
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'شو تمضرط اكو واحد يهين نفسه؟🤔👌🏿', 1, 'md')  
@@ -4383,15 +4383,15 @@ if DevAbs:sismember(VoRTeX.."Abs:AbsConstructor:"..msg.chat_id_,result.id_) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md')
 return false
 end 
-local VoRTeXTEAM = "صارر ستاذيي 🏃🏻‍♂️♥️" 
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md') 
-local VoRTeXTEAM = { "لكك جرجف @"..username.." احترم اسيادكك لا اكتلكك وازربب على كبركك،💩🖐🏿","هشش لكك فاشل @"..username.." لتضل تمسلت لا اخربط تضاريس وجهك جنه ابط عبده، 😖👌🏿","حبيبي @"..username.." راح احاول احترمكك هالمره بلكي تبطل حيونه، 🤔🔪","دمشي لك @"..username.." ينبوع الفشل مو زين ملفيك ونحجي وياك هي منبوذ 😏🖕🏿","ها الغليض التفس ابو راس المربع @"..username.." متعلملك جم حجايه وجاي تطكطكهن علينه دبطل😒🔪",}
-Dev_Abs(msg.chat_id_, result.id_, 1,''..VoRTeXTEAM[math.random(#VoRTeXTEAM)], 1, 'html') 
+local VoRTeX_dev = "صارر ستاذيي 🏃🏻‍♂️♥️" 
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md') 
+local VoRTeX_dev = { "لكك جرجف @"..username.." احترم اسيادكك لا اكتلكك وازربب على كبركك،💩🖐🏿","هشش لكك فاشل @"..username.." لتضل تمسلت لا اخربط تضاريس وجهك جنه ابط عبده، 😖👌🏿","حبيبي @"..username.." راح احاول احترمكك هالمره بلكي تبطل حيونه، 🤔🔪","دمشي لك @"..username.." ينبوع الفشل مو زين ملفيك ونحجي وياك هي منبوذ 😏🖕🏿","ها الغليض التفس ابو راس المربع @"..username.." متعلملك جم حجايه وجاي تطكطكهن علينه دبطل😒🔪",}
+Dev_Abs(msg.chat_id_, result.id_, 1,''..VoRTeX_dev[math.random(#VoRTeX_dev)], 1, 'html') 
 else  
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙العضو غير موجود في المجموعه', 1, 'md') 
 end 
 end 
-resolve_username(username,VoRTeXTEAM)
+resolve_username(username,VoRTeX_dev)
 end
 end
 --     Source VoRTeX     --
@@ -4414,10 +4414,10 @@ if DevAbs:sismember(VoRTeX.."Abs:AbsConstructor:"..msg.chat_id_,result.sender_us
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md')
 return false
 end 
-local VoRTeXTEAM = "صارر ستاذيي 🏃🏻‍♂️♥️" 
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md') 
-local VoRTeXTEAM = {"لكك جرجف احترم اسيادكك لا اكتلكك وازربب على كبركك،💩🖐🏿","هشش فاشل لتضل تمسلت لا اخربط تضاريس وجهك جنه ابط عبده، 😖👌🏿","دمشي لك ينبوع الفشل مو زين ملفيك ونحجي وياك هي منبوذ 😏🖕🏿","ها الغليض التفس ابو راس المربع متعلملك جم حجايه وجاي تطكطكهن علينه دبطل😒🔪","حبيبي راح احاول احترمكك هالمره بلكي تبطل حيونه، 🤔🔪"} 
-Dev_Abs(msg.chat_id_, result.id_, 1,''..VoRTeXTEAM[math.random(#VoRTeXTEAM)], 1, 'md') 
+local VoRTeX_dev = "صارر ستاذيي 🏃🏻‍♂️♥️" 
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md') 
+local VoRTeX_dev = {"لكك جرجف احترم اسيادكك لا اكتلكك وازربب على كبركك،💩🖐🏿","هشش فاشل لتضل تمسلت لا اخربط تضاريس وجهك جنه ابط عبده، 😖👌🏿","دمشي لك ينبوع الفشل مو زين ملفيك ونحجي وياك هي منبوذ 😏🖕🏿","ها الغليض التفس ابو راس المربع متعلملك جم حجايه وجاي تطكطكهن علينه دبطل😒🔪","حبيبي راح احاول احترمكك هالمره بلكي تبطل حيونه، 🤔🔪"} 
+Dev_Abs(msg.chat_id_, result.id_, 1,''..VoRTeX_dev[math.random(#VoRTeX_dev)], 1, 'md') 
 end 
 if tonumber(msg.reply_to_message_id_) == 0 then
 else 
@@ -4436,10 +4436,10 @@ if tonumber(result.sender_user_id_) == tonumber(DevId) then
 Dev_Abs(msg.chat_id_, result.id_, 1, 'مواححح احلاا بوسةة المطوريي😻🔥💗', 1, 'html')
 return false
 end 
-local VoRTeXTEAM = "صارر ستاذيي 🏃🏻‍♂️♥️" 
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md') 
-local VoRTeXTEAM = {"مواححح افيش عافيههه😍🔥💗","امممووااهحح شهلعسل🥺🍯💘","مواححح،ءوفف اذوب🤤💗"} 
-Dev_Abs(msg.chat_id_, result.id_, 1,''..VoRTeXTEAM[math.random(#VoRTeXTEAM)], 1, 'md') 
+local VoRTeX_dev = "صارر ستاذيي 🏃🏻‍♂️♥️" 
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md') 
+local VoRTeX_dev = {"مواححح افيش عافيههه😍🔥💗","امممووااهحح شهلعسل🥺🍯💘","مواححح،ءوفف اذوب🤤💗"} 
+Dev_Abs(msg.chat_id_, result.id_, 1,''..VoRTeX_dev[math.random(#VoRTeX_dev)], 1, 'md') 
 end 
 if tonumber(msg.reply_to_message_id_) == 0 then
 else 
@@ -4458,10 +4458,10 @@ if tonumber(result.sender_user_id_) == tonumber(DevId) then
 Dev_Abs(msg.chat_id_, result.id_, 1, 'تعال مطوريي محتاجيكك🏃🏻‍♂️♥️', 1, 'html')
 return false
 end 
-local VoRTeXTEAM = "صارر ستاذيي 🏃🏻‍♂️♥️" 
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md') 
-local VoRTeXTEAM = {"تتعال ححب محتاجيك🙂🍭","تعال يولل استاذكك ايريدككك😒🔪","يمعوود تعاال يريدوكك🤕♥️","تعال لكك ديصيحوك😐🖤"} 
-Dev_Abs(msg.chat_id_, result.id_, 1,''..VoRTeXTEAM[math.random(#VoRTeXTEAM)], 1, 'md') 
+local VoRTeX_dev = "صارر ستاذيي 🏃🏻‍♂️♥️" 
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md') 
+local VoRTeX_dev = {"تتعال ححب محتاجيك🙂🍭","تعال يولل استاذكك ايريدككك😒🔪","يمعوود تعاال يريدوكك🤕♥️","تعال لكك ديصيحوك😐🖤"} 
+Dev_Abs(msg.chat_id_, result.id_, 1,''..VoRTeX_dev[math.random(#VoRTeX_dev)], 1, 'md') 
 end 
 if tonumber(msg.reply_to_message_id_) == 0 then
 else 
@@ -4473,7 +4473,7 @@ end
 if text and text:match('^صيحه @(.*)') and ChCheck(msg) or text and text:match('^صيح @(.*)') and ChCheck(msg) then 
 if not DevAbs:get(VoRTeX..'Abs:Lock:Stupid'..msg.chat_id_) then
 local username = text:match('^صيحه @(.*)') or text:match('^صيح @(.*)') 
-function VoRTeXTEAM(extra,result,success)
+function VoRTeX_dev(extra,result,success)
 if result.id_ then  
 if tonumber(result.id_) == tonumber(VoRTeX) then  
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'فهمنيي شلوون راحح اصيح نفسيي؟😶💔', 1, 'md')  
@@ -4483,15 +4483,15 @@ if tonumber(result.id_) == tonumber(DevId) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, 'تعال مطوريي محتاجيكك🏃🏻‍♂️♥️ @'..username, 1, 'html') 
 return false  
 end  
-local VoRTeXTEAM = "صارر ستاذيي 🏃🏻‍♂️♥️" 
-Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeXTEAM, 1, 'md') 
-local VoRTeXTEAM = { "تتعال ححب @"..username.." محتاجيك🙂🍭","تعال يولل @"..username.." استاذكك ايريدككك😒🔪","يمعوود @"..username.." تعاال يريدوكك🤕♥️","تعال لكك @"..username.." ديصيحوك😐🖤",}
-Dev_Abs(msg.chat_id_, result.id_, 1,''..VoRTeXTEAM[math.random(#VoRTeXTEAM)], 1, 'html') 
+local VoRTeX_dev = "صارر ستاذيي 🏃🏻‍♂️♥️" 
+Dev_Abs(msg.chat_id_, msg.id_, 1,VoRTeX_dev, 1, 'md') 
+local VoRTeX_dev = { "تتعال ححب @"..username.." محتاجيك🙂🍭","تعال يولل @"..username.." استاذكك ايريدككك😒🔪","يمعوود @"..username.." تعاال يريدوكك🤕♥️","تعال لكك @"..username.." ديصيحوك😐🖤",}
+Dev_Abs(msg.chat_id_, result.id_, 1,''..VoRTeX_dev[math.random(#VoRTeX_dev)], 1, 'html') 
 else  
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙العضو غير موجود في المجموعه', 1, 'md') 
 end 
 end 
-resolve_username(username,VoRTeXTEAM)
+resolve_username(username,VoRTeX_dev)
 end
 end
 end
@@ -5458,8 +5458,8 @@ if text == 'نبذتي' or text == 'بايو' then
 send(msg.chat_id_, msg.id_,'['..GetBio(msg.sender_user_id_)..']')
 end
 if text == "راسلني" then
-VoRTeXTEAM = {"ها هلاو","انطق","كول حبي","تفضل"};
-send(msg.sender_user_id_, 0,VoRTeXTEAM[math.random(#VoRTeXTEAM)])
+VoRTeX_dev = {"ها هلاو","انطق","كول حبي","تفضل"};
+send(msg.sender_user_id_, 0,VoRTeX_dev[math.random(#VoRTeX_dev)])
 end
 --     Source VoRTeX     --
 if text == "صلاحيتي" or text == "صلاحياتي" and ChCheck(msg) then 
@@ -5499,23 +5499,23 @@ end end end
 if Constructor(msg) then
 if text == "تفعيل الحظر" and ChCheck(msg) or text == "تفعيل الطرد" and ChCheck(msg) then
 DevAbs:del(VoRTeX.."Abs:Lock:KickBan"..msg.chat_id_)
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل الطرد والحظر'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل الطرد والحظر'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 end
 if text == "تعطيل الحظر" and ChCheck(msg) or text == "تعطيل الطرد" and ChCheck(msg) then
 DevAbs:set(VoRTeX.."Abs:Lock:KickBan"..msg.chat_id_,"true")
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل الطرد والحظر'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل الطرد والحظر'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 end
 if text == "تفعيل الكتم" and ChCheck(msg) or text == "تفعيل التقييد" and ChCheck(msg) then
 DevAbs:del(VoRTeX.."Abs:Lock:MuteTked"..msg.chat_id_)
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل الكتم والتقيد'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل الكتم والتقيد'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 end
 if text == "تعطيل الكتم" and ChCheck(msg) or text == "تعطيل التقييد" and ChCheck(msg) then
 DevAbs:set(VoRTeX.."Abs:Lock:MuteTked"..msg.chat_id_,"true")
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل الكتم والتقيد'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل الكتم والتقيد'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 end
 end
 if BasicConstructor(msg) then
@@ -6176,8 +6176,8 @@ end
 if text and text:match("^اضف رسائل (%d+)$") and msg.reply_to_message_id_ == 0 and ChCheck(msg) then  
 if Constructor(msg) then
 TXT = text:match("^اضف رسائل (%d+)$")
-DevAbs:set('VoRTeXTEAM:'..VoRTeX..'id:user'..msg.chat_id_,TXT)  
-DevAbs:setex('VoRTeXTEAM:'..VoRTeX.."numadd:user"..msg.chat_id_.."" .. msg.sender_user_id_, 300, true)  
+DevAbs:set('VoRTeX_dev:'..VoRTeX..'id:user'..msg.chat_id_,TXT)  
+DevAbs:setex('VoRTeX_dev:'..VoRTeX.."numadd:user"..msg.chat_id_.."" .. msg.sender_user_id_, 300, true)  
 Dev_Abs(msg.chat_id_, msg.id_, 1, "⌁︙ارسل عدد الرسائل الان \n⌁︙ارسل الغاء لالغاء الامر ", 1, "md")
 Dev_Abs(msg.chat_id_, msg.id_, 1,numd, 1, 'md') 
 else 
@@ -6197,8 +6197,8 @@ end
 if text and text:match("^اضف نقاط (%d+)$") and msg.reply_to_message_id_ == 0 and ChCheck(msg) then  
 if Constructor(msg) then
 TXT = text:match("^اضف نقاط (%d+)$")
-DevAbs:set('VoRTeXTEAM:'..VoRTeX..'ids:user'..msg.chat_id_,TXT)  
-DevAbs:setex('VoRTeXTEAM:'..VoRTeX.."nmadd:user"..msg.chat_id_.."" .. msg.sender_user_id_, 300, true)  
+DevAbs:set('VoRTeX_dev:'..VoRTeX..'ids:user'..msg.chat_id_,TXT)  
+DevAbs:setex('VoRTeX_dev:'..VoRTeX.."nmadd:user"..msg.chat_id_.."" .. msg.sender_user_id_, 300, true)  
 Dev_Abs(msg.chat_id_, msg.id_, 1, "⌁︙ارسل عدد النقاط الان \n⌁︙ارسل الغاء لالغاء الامر ", 1, "md")
 Dev_Abs(msg.chat_id_, msg.id_, 1,numd, 1, 'md') 
 else 
@@ -6224,8 +6224,8 @@ end
 tdcli_function ({ID = "PinChannelMessage",channel_id_ = msg.chat_id_:gsub("-100",""),message_id_ = msg.reply_to_message_id_,disable_notification_ = 1},function(arg,data) 
 if data.ID == "Ok" then
 DevAbs:set(VoRTeX..'Abs:PinnedMsg'..msg.chat_id_,msg.reply_to_message_id_)
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تثبيت الرساله بنجاح'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تثبيت الرساله بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 return false  
 end
 if data.code_ == 6 then
@@ -6642,13 +6642,13 @@ end
 end
 --     Source VoRTeX     --
 if text and (text == "تفعيل تحويل الصيغ" or text == "تفعيل التحويل") and Manager(msg) and ChCheck(msg) then
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل تحويل الصيغ'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل تحويل الصيغ'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX..'Abs:Thwel:Abs'..msg.chat_id_) 
 end
 if text and (text == "تعطيل تحويل الصيغ" or text == "تعطيل التحويل") and Manager(msg) and ChCheck(msg) then
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل تحويل الصيغ'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل تحويل الصيغ'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX..'Abs:Thwel:Abs'..msg.chat_id_,true)  
 end
 if text == 'تحويل' and not DevAbs:get(VoRTeX..'Abs:Thwel:Abs'..msg.chat_id_) then  
@@ -7027,8 +7027,8 @@ end
 if SecondSudo(msg) then
 if text and text:match("^تعيين الايدي العام$") or text and text:match("^تعين الايدي العام$") or text and text:match("^تعيين كليشة الايدي$") then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙رجائا اتبع التعليمات للتعيين \n⌁︙لطبع كليشة الايدي ارسل كليشه تحتوي على النصوص التي باللغه الانجليزيه ادناه ↫ ⤈\n┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉\n `#username` ↬ لطبع المعرف\n `#id` ↬ لطبع الايدي \n `#photos` ↬ لطبع عدد الصور \n `#stast` ↬ لطبع الرتب \n `#msgs` ↬ لطبع عدد الرسائل \n `#msgday` ↬ لطبع الرسائل اليوميه \n `#CustomTitle` ↬ لطبع اللقب \n `#bio` ↬ لطبع البايو \n `#auto` ↬ لطبع التفاعل \n `#game` ↬ لطبع عدد النقاط \n `#cont` ↬ لطبع عدد الجهات \n `#edit` ↬ لطبع عدد السحكات \n `#Description` ↬ لطبع تعليق الصور\n┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉', 1, 'md')
-DevAbs:set("VoRTeX:New:id:"..VoRTeX..msg.sender_user_id_,'VoRTeXTEAM')
-return "VoRTeXTEAM"
+DevAbs:set("VoRTeX:New:id:"..VoRTeX..msg.sender_user_id_,'VoRTeX_dev')
+return "VoRTeX_dev"
 end
 if text and DevAbs:get("VoRTeX:New:id:"..VoRTeX..msg.sender_user_id_) then 
 if text == 'الغاء' then   
@@ -7049,8 +7049,8 @@ end
 --     Source VoRTeX     --
 if text and text:match("^تعيين الايدي$") and ChCheck(msg) or text and text:match("^تعين الايدي$") and ChCheck(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙رجائا اتبع التعليمات للتعيين \n⌁︙لطبع كليشة الايدي ارسل كليشه تحتوي على النصوص التي باللغه الانجليزيه ادناه ↫ ⤈\n┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉\n `#username` ↬ لطبع المعرف\n `#id` ↬ لطبع الايدي \n `#photos` ↬ لطبع عدد الصور \n `#stast` ↬ لطبع الرتب \n `#msgs` ↬ لطبع عدد الرسائل \n `#msgday` ↬ لطبع الرسائل اليوميه \n `#CustomTitle` ↬ لطبع اللقب \n `#bio` ↬ لطبع البايو \n `#auto` ↬ لطبع التفاعل \n `#game` ↬ لطبع عدد النقاط \n `#cont` ↬ لطبع عدد الجهات \n `#edit` ↬ لطبع عدد السحكات \n `#Description` ↬ لطبع تعليق الصور\n┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉', 1, 'md')
-DevAbs:set("VoRTeX:New:id:"..VoRTeX..msg.chat_id_..msg.sender_user_id_,'VoRTeXTEAM')
-return "VoRTeXTEAM"
+DevAbs:set("VoRTeX:New:id:"..VoRTeX..msg.chat_id_..msg.sender_user_id_,'VoRTeX_dev')
+return "VoRTeX_dev"
 end
 if text and Manager(msg) and DevAbs:get("VoRTeX:New:id:"..VoRTeX..msg.chat_id_..msg.sender_user_id_) then 
 if text == 'الغاء' then   
@@ -7073,7 +7073,7 @@ if msg.reply_to_message_id_ ~= 0 then
 return ""
 else
 if text and (text:match("^ايدي$") or text:match("^id$") or text:match("^Id$")) and ChCheck(msg) then
-function VoRTeXTEAM(extra,abbas,success)
+function VoRTeX_dev(extra,abbas,success)
 if abbas.username_ then username = '@'..abbas.username_ else username = 'لا يوجد' end
 if GetCustomTitle(msg.sender_user_id_,msg.chat_id_) ~= false then CustomTitle = GetCustomTitle(msg.sender_user_id_,msg.chat_id_) else CustomTitle = 'لا يوجد' end
 local function getpro(extra, abbas, success) 
@@ -7197,7 +7197,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙عذرا الايدي معطل', 1, 'md
 end end end
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil)
 end
-getUser(msg.sender_user_id_, VoRTeXTEAM)
+getUser(msg.sender_user_id_, VoRTeX_dev)
 end
 end 
 --     Source VoRTeX     --
@@ -7332,16 +7332,16 @@ if text and text == 'تفعيل الايدي بالصوره' and ChCheck(msg) th
 if not DevAbs:get(VoRTeX..'Abs:Lock:Id:Photo'..msg.chat_id_) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙الايدي بالصوره بالتاكيد مفعل', 1, 'md')
 else
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل الايدي بالصوره'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل الايدي بالصوره'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX..'Abs:Lock:Id:Photo'..msg.chat_id_)
 end end
 if text and text == 'تعطيل الايدي بالصوره' and ChCheck(msg) then
 if DevAbs:get(VoRTeX..'Abs:Lock:Id:Photo'..msg.chat_id_) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙الايدي بالصوره بالتاكيد معطل', 1, 'md')
 else
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل الايدي بالصوره'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل الايدي بالصوره'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX..'Abs:Lock:Id:Photo'..msg.chat_id_,true)
 end end 
 
@@ -7349,16 +7349,16 @@ if text and text == 'تفعيل الايدي' and ChCheck(msg) then
 if not DevAbs:get(VoRTeX..'Abs:Lock:Id'..msg.chat_id_) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙الايدي بالتاكيد مفعل ', 1, 'md')
 else
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل الايدي بنجاح'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل الايدي بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX..'Abs:Lock:Id'..msg.chat_id_)
 end end 
 if text and text == 'تعطيل الايدي' and ChCheck(msg) then
 if DevAbs:get(VoRTeX..'Abs:Lock:Id'..msg.chat_id_) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙الايدي بالتاكيد معطل ', 1, 'md')
 else
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل الايدي بنجاح'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل الايدي بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX..'Abs:Lock:Id'..msg.chat_id_,true)
 end end
 end
@@ -7386,13 +7386,13 @@ end
 --     Source VoRTeX     --
 if Admin(msg) then
 if text and text:match("^تفعيل الترحيب$") and ChCheck(msg) then
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل الترحيب بنجاح'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل الترحيب بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX.."Abs:Lock:Welcome"..msg.chat_id_,true)
 end
 if text and text:match("^تعطيل الترحيب$") and ChCheck(msg) then
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل الترحيب بنجاح'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل الترحيب بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX.."Abs:Lock:Welcome"..msg.chat_id_)
 end
 if DevAbs:get(VoRTeX..'Abs:setwelcome'..msg.chat_id_..':'..msg.sender_user_id_) then 
@@ -7584,13 +7584,13 @@ end
 end
 --     Source VoRTeX     --
 if text and (text == "تفعيل امسح" or text == "تفعيل المسح التلقائي" or text == "تفعيل الحذف التلقائي") and Constructor(msg) and ChCheck(msg) then
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل امسح مع ميزة الحذف التلقائي للميديا'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل امسح مع ميزة الحذف التلقائي للميديا'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX..'Abs:Lock:Clean'..msg.chat_id_,true)  
 end
 if text and (text == "تعطيل امسح" or text == "تعطيل المسح التلقائي" or text == "تعطيل الحذف التلقائي") and Constructor(msg) and ChCheck(msg) then
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل امسح مع ميزة الحذف التلقائي للميديا'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل امسح مع ميزة الحذف التلقائي للميديا'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX..'Abs:Lock:Clean'..msg.chat_id_) 
 end
 if text and (text:match("^تعين عدد المسح (%d+)$") or text:match("^تعيين عدد المسح (%d+)$") or text:match("^تعين عدد الحذف (%d+)$") or text:match("^تعيين عدد الحذف (%d+)$")) and Constructor(msg) then   
@@ -8569,13 +8569,13 @@ Dev_Abs(msg.chat_id_,0, 1, txt[2], 1, 'md')
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})
 end
 if text == "تفعيل انطق" and Manager(msg) and ChCheck(msg) then
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل ميزة انطق'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل ميزة انطق'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX..'Abs:Antk:Abs'..msg.chat_id_) 
 end
 if text == "تعطيل انطق" and Manager(msg) and ChCheck(msg) then
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل ميزة انطق'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل ميزة انطق'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX..'Abs:Antk:Abs'..msg.chat_id_,true)  
 end
 if text and text:match("^انطق (.*)$") and not DevAbs:get(VoRTeX..'Abs:Antk:Abs'..msg.chat_id_) then
@@ -8621,13 +8621,13 @@ end,nil)
 end
 --     Source VoRTeX     --
 if text == "تفعيل الزخرفه" and Manager(msg) and ChCheck(msg) then
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل الزخرفه بنجاح'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل الزخرفه بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX..'Abs:Zrf:Abs'..msg.chat_id_) 
 end
 if text == "تعطيل الزخرفه" and Manager(msg) and ChCheck(msg) then
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل الزخرفه بنجاح'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل الزخرفه بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX..'Abs:Zrf:Abs'..msg.chat_id_,true)  
 end
 if DevAbs:get(VoRTeX..'Zrf:Abs'..msg.chat_id_..msg.sender_user_id_) then 
@@ -8670,13 +8670,13 @@ end
 end
 --     Source VoRTeX     --
 if text == "تفعيل الابراج" and Manager(msg) and ChCheck(msg) then
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل الابراج بنجاح'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل الابراج بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX..'Abs:Brg:Abs'..msg.chat_id_) 
 end
 if text == "تعطيل الابراج" and Manager(msg) and ChCheck(msg) then
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل الابراج بنجاح'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل الابراج بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX..'Abs:Brg:Abs'..msg.chat_id_,true)  
 end
 if not DevAbs:get(VoRTeX..'Abs:Brg:Abs'..msg.chat_id_) then
@@ -8690,13 +8690,13 @@ end
 end
 --     Source VoRTeX     --
 if text and (text == "تفعيل اوامر النسب" or text == "تفعيل نسبه الحب" or text == "تفعيل نسبه الكره" or text == "تفعيل نسبه الرجوله" or text == "تفعيل نسبه الانوثه" or text == "تفعيل نسبه الغباء") and Manager(msg) and ChCheck(msg) then
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل اوامر النسب'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل اوامر النسب'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX..'Abs:Nsba:Abs'..msg.chat_id_) 
 end
 if text and (text == "تعطيل اوامر النسب" or text == "تعطيل نسبه الحب" or text == "تعطيل نسبه الكره" or text == "تعطيل نسبه الرجوله" or text == "تعطيل نسبه الانوثه" or text == "تعطيل نسبه الغباء") and Manager(msg) and ChCheck(msg) then
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل اوامر النسب'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل اوامر النسب'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX..'Abs:Nsba:Abs'..msg.chat_id_,true)  
 end
 if not DevAbs:get(VoRTeX..'Abs:Nsba:Abs'..msg.chat_id_) then
@@ -8786,13 +8786,13 @@ return false
 end
 --     Source VoRTeX     --
 if text == "تفعيل حساب العمر" and Manager(msg) and ChCheck(msg) then
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل حساب العمر'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل حساب العمر'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX..'Abs:Age:Abs'..msg.chat_id_) 
 end
 if text == "تعطيل حساب العمر" and Manager(msg) and ChCheck(msg) then
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل حساب العمر'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل حساب العمر'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX..'Abs:Age:Abs'..msg.chat_id_,true)  
 end
 if not DevAbs:get(VoRTeX..'Abs:Age:Abs'..msg.chat_id_) then
@@ -8806,13 +8806,13 @@ end
 end
 --     Source VoRTeX     --
 if text == "تفعيل معاني الاسماء" and Manager(msg) and ChCheck(msg) then
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل معاني الاسماء'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل معاني الاسماء'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX..'Abs:Mean:Abs'..msg.chat_id_) 
 end
 if text == "تعطيل معاني الاسماء" and Manager(msg) and ChCheck(msg) then
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل معاني الاسماء'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل معاني الاسماء'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX..'Abs:Mean:Abs'..msg.chat_id_,true)  
 end
 if not DevAbs:get(VoRTeX..'Abs:Mean:Abs'..msg.chat_id_) then
@@ -8843,108 +8843,108 @@ end
 --     Source VoRTeX     --
 if Admin(msg) then
 if DevAbs:get(VoRTeX..'Abs:LockSettings'..msg.chat_id_) then 
-if text == "الروابط" then if DevAbs:get(VoRTeX..'Abs:Lock:Links'..msg.chat_id_) then mute_links = 'مقفله' else mute_links = 'مفتوحه' end local VoRTeXTEAM = "\n" .."⌁︙الروابط ↫ "..mute_links.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "المعرف" or text == "المعرفات" then if DevAbs:get(VoRTeX..'Abs:Lock:Tags'..msg.chat_id_) then lock_tag = 'مقفوله' else lock_tag = 'مفتوحه' end local VoRTeXTEAM = "\n" .."⌁︙المعرف ↫ "..lock_tag.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "المتحركه" or text == "الملصقات المتحركه" then if DevAbs:get(VoRTeX..'Abs:Lock:Gifs'..msg.chat_id_) then mute_gifs = 'مقفوله' else mute_gifs = 'مفتوحه' end local VoRTeXTEAM = "\n" .."⌁︙المتحركه ↫ "..mute_gifs.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "الملصقات" then if DevAbs:get(VoRTeX..'Abs:Lock:Stickers'..msg.chat_id_) then lock_sticker = 'مقفوله' else lock_sticker = 'مفتوحه' end local VoRTeXTEAM = "\n" .."⌁︙الملصقات ↫ "..lock_sticker.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "الصور" then if DevAbs:get(VoRTeX..'Abs:Lock:Photo'..msg.chat_id_) then mute_photo = 'مقفوله' else mute_photo = 'مفتوحه' end local VoRTeXTEAM = "\n" .."⌁︙الصور ↫ "..mute_photo.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "الفيديو" or text == "الفيديوهات" then if DevAbs:get(VoRTeX..'Abs:Lock:Videos'..msg.chat_id_) then mute_video = 'مقفوله' else mute_video = 'مفتوحه' end local VoRTeXTEAM = "\n" .."⌁︙الفيديو ↫ "..mute_video.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "الاونلاين" then if DevAbs:get(VoRTeX..'Abs:Lock:Inline'..msg.chat_id_) then mute_in = 'مقفل' else mute_in = 'مفتوح' end local VoRTeXTEAM = "\n" .."⌁︙الاونلاين ↫ "..mute_in.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "الدردشه" then if DevAbs:get(VoRTeX..'Abs:Lock:Text'..msg.chat_id_) then mute_text = 'مقفله' else mute_text = 'مفتوحه' end local VoRTeXTEAM = "\n" .."⌁︙الدردشه ↫ "..mute_text.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "التوجيه" or text == "اعاده التوجيه" then if DevAbs:get(VoRTeX..'Abs:Lock:Forwards'..msg.chat_id_) then lock_forward = 'مقفل' else lock_forward = 'مفتوح' end local VoRTeXTEAM = "\n" .."⌁︙التوجيه ↫ "..lock_forward.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "الاغاني" then if DevAbs:get(VoRTeX..'Abs:Lock:Music'..msg.chat_id_) then mute_music = 'مقفوله' else mute_music = 'مفتوحه' end local VoRTeXTEAM = "\n" .."⌁︙الاغاني ↫ "..mute_music.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "الصوت" or text == "الصوتيات" then if DevAbs:get(VoRTeX..'Abs:Lock:Voice'..msg.chat_id_) then mute_voice = 'مقفول' else mute_voice = 'مفتوح' end local VoRTeXTEAM = "\n" .."⌁︙الصوت ↫ "..mute_voice.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "الجهات" or text == "جهات الاتصال" then if DevAbs:get(VoRTeX..'Abs:Lock:Contact'..msg.chat_id_) then lock_contact = 'مقفوله' else lock_contact = 'مفتوحه' end local VoRTeXTEAM = "\n" .."⌁︙الجهات ↫ "..lock_contact.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "الماركداون" then if DevAbs:get(VoRTeX..'Abs:Lock:Markdown'..msg.chat_id_) then markdown = 'مقفل' else markdown = 'مفتوح' end local VoRTeXTEAM = "\n" .."⌁︙الماركداون ↫ "..markdown.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "الهاشتاك" then if DevAbs:get(VoRTeX..'Abs:Lock:Hashtak'..msg.chat_id_) then lock_htag = 'مقفل' else lock_htag = 'مفتوح' end local VoRTeXTEAM = "\n" .."⌁︙الهاشتاك ↫ "..lock_htag.."\n"Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "التعديل" then if DevAbs:get(VoRTeX..'Abs:Lock:EditMsgs'..msg.chat_id_) then mute_edit = 'مقفل' else mute_edit = 'مفتوح' end local VoRTeXTEAM = "\n" .."⌁︙التعديل ↫ "..mute_edit.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "التثبيت" then if DevAbs:get(VoRTeX..'Abs:Lock:Pin'..msg.chat_id_) then lock_pin = 'مقفل' else lock_pin = 'مفتوح' end local VoRTeXTEAM = "\n" .."⌁︙التثبيت ↫ "..lock_pin.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "الاشعارات" then if DevAbs:get(VoRTeX..'Abs:Lock:TagServr'..msg.chat_id_) then lock_tgservice = 'مقفوله' else lock_tgservice = 'مفتوحه' end local VoRTeXTEAM = "\n" .."⌁︙الاشعارات ↫ "..lock_tgservice.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "الكلايش" then if DevAbs:get(VoRTeX..'Abs:Lock:Spam'..msg.chat_id_) then lock_spam = 'مقفوله' else lock_spam = 'مفتوحه' end local VoRTeXTEAM = "\n" .."⌁︙الكلايش ↫ "..lock_spam.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "الدخول" then if DevAbs:get(VoRTeX..'Abs:Lock:Join'..msg.chat_id_) then lock_Join = 'مقفول' else lock_Join = 'مفتوح' end local VoRTeXTEAM = "\n" .."⌁︙الدخول ↫ "..lock_Join.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "الشبكات" then if DevAbs:get(VoRTeX..'Abs:Lock:WebLinks'..msg.chat_id_) then lock_wp = 'مقفوله' else lock_wp = 'مفتوحه' end local VoRTeXTEAM = "\n" .."⌁︙الشبكات ↫ "..lock_wp.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "المواقع" then if DevAbs:get(VoRTeX..'Abs:Lock:Location'..msg.chat_id_) then lock_location = 'مقفوله' else lock_location = 'مفتوحه' end local VoRTeXTEAM = "\n" .."⌁︙المواقع ↫ "..lock_location.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "العربيه" then if DevAbs:get(VoRTeX..'Abs:Lock:Arabic'..msg.chat_id_) then lock_arabic = 'مقفوله' else lock_arabic = 'مفتوحه' end local VoRTeXTEAM = "\n" .."⌁︙العربيه ↫ "..lock_arabic.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "الانكليزيه" then if DevAbs:get(VoRTeX..'Abs:Lock:English'..msg.chat_id_) then lock_english = 'مقفوله' else lock_english = 'مفتوحه' end local VoRTeXTEAM = "\n" .."⌁︙الانكليزيه ↫ "..lock_english.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "الكفر" then if DevAbs:get(VoRTeX..'Abs:Lock:Kfr'..msg.chat_id_) then lock_kaf = 'مفتوح' else lock_kaf = 'مقفل' end local VoRTeXTEAM = "\n" .."⌁︙الكفر ↫ "..lock_kaf.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "الفشار" then if DevAbs:get(VoRTeX..'Abs:Lock:Fshar'..msg.chat_id_) then lock_fshar = 'مفتوح' else lock_fshar = 'مقفل' end local VoRTeXTEAM = "\n" .."⌁︙الفشار ↫ "..lock_fshar.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
-if text == "الطائفيه" then if DevAbs:get(VoRTeX..'Abs:Lock:Taf'..msg.chat_id_) then lock_taf = 'مفتوحه' else lock_taf = 'مقفله' end local VoRTeXTEAM = "\n" .."⌁︙الطائفيه ↫ "..lock_taf.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeXTEAM, 1, 'md') end
+if text == "الروابط" then if DevAbs:get(VoRTeX..'Abs:Lock:Links'..msg.chat_id_) then mute_links = 'مقفله' else mute_links = 'مفتوحه' end local VoRTeX_dev = "\n" .."⌁︙الروابط ↫ "..mute_links.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "المعرف" or text == "المعرفات" then if DevAbs:get(VoRTeX..'Abs:Lock:Tags'..msg.chat_id_) then lock_tag = 'مقفوله' else lock_tag = 'مفتوحه' end local VoRTeX_dev = "\n" .."⌁︙المعرف ↫ "..lock_tag.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "المتحركه" or text == "الملصقات المتحركه" then if DevAbs:get(VoRTeX..'Abs:Lock:Gifs'..msg.chat_id_) then mute_gifs = 'مقفوله' else mute_gifs = 'مفتوحه' end local VoRTeX_dev = "\n" .."⌁︙المتحركه ↫ "..mute_gifs.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "الملصقات" then if DevAbs:get(VoRTeX..'Abs:Lock:Stickers'..msg.chat_id_) then lock_sticker = 'مقفوله' else lock_sticker = 'مفتوحه' end local VoRTeX_dev = "\n" .."⌁︙الملصقات ↫ "..lock_sticker.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "الصور" then if DevAbs:get(VoRTeX..'Abs:Lock:Photo'..msg.chat_id_) then mute_photo = 'مقفوله' else mute_photo = 'مفتوحه' end local VoRTeX_dev = "\n" .."⌁︙الصور ↫ "..mute_photo.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "الفيديو" or text == "الفيديوهات" then if DevAbs:get(VoRTeX..'Abs:Lock:Videos'..msg.chat_id_) then mute_video = 'مقفوله' else mute_video = 'مفتوحه' end local VoRTeX_dev = "\n" .."⌁︙الفيديو ↫ "..mute_video.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "الاونلاين" then if DevAbs:get(VoRTeX..'Abs:Lock:Inline'..msg.chat_id_) then mute_in = 'مقفل' else mute_in = 'مفتوح' end local VoRTeX_dev = "\n" .."⌁︙الاونلاين ↫ "..mute_in.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "الدردشه" then if DevAbs:get(VoRTeX..'Abs:Lock:Text'..msg.chat_id_) then mute_text = 'مقفله' else mute_text = 'مفتوحه' end local VoRTeX_dev = "\n" .."⌁︙الدردشه ↫ "..mute_text.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "التوجيه" or text == "اعاده التوجيه" then if DevAbs:get(VoRTeX..'Abs:Lock:Forwards'..msg.chat_id_) then lock_forward = 'مقفل' else lock_forward = 'مفتوح' end local VoRTeX_dev = "\n" .."⌁︙التوجيه ↫ "..lock_forward.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "الاغاني" then if DevAbs:get(VoRTeX..'Abs:Lock:Music'..msg.chat_id_) then mute_music = 'مقفوله' else mute_music = 'مفتوحه' end local VoRTeX_dev = "\n" .."⌁︙الاغاني ↫ "..mute_music.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "الصوت" or text == "الصوتيات" then if DevAbs:get(VoRTeX..'Abs:Lock:Voice'..msg.chat_id_) then mute_voice = 'مقفول' else mute_voice = 'مفتوح' end local VoRTeX_dev = "\n" .."⌁︙الصوت ↫ "..mute_voice.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "الجهات" or text == "جهات الاتصال" then if DevAbs:get(VoRTeX..'Abs:Lock:Contact'..msg.chat_id_) then lock_contact = 'مقفوله' else lock_contact = 'مفتوحه' end local VoRTeX_dev = "\n" .."⌁︙الجهات ↫ "..lock_contact.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "الماركداون" then if DevAbs:get(VoRTeX..'Abs:Lock:Markdown'..msg.chat_id_) then markdown = 'مقفل' else markdown = 'مفتوح' end local VoRTeX_dev = "\n" .."⌁︙الماركداون ↫ "..markdown.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "الهاشتاك" then if DevAbs:get(VoRTeX..'Abs:Lock:Hashtak'..msg.chat_id_) then lock_htag = 'مقفل' else lock_htag = 'مفتوح' end local VoRTeX_dev = "\n" .."⌁︙الهاشتاك ↫ "..lock_htag.."\n"Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "التعديل" then if DevAbs:get(VoRTeX..'Abs:Lock:EditMsgs'..msg.chat_id_) then mute_edit = 'مقفل' else mute_edit = 'مفتوح' end local VoRTeX_dev = "\n" .."⌁︙التعديل ↫ "..mute_edit.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "التثبيت" then if DevAbs:get(VoRTeX..'Abs:Lock:Pin'..msg.chat_id_) then lock_pin = 'مقفل' else lock_pin = 'مفتوح' end local VoRTeX_dev = "\n" .."⌁︙التثبيت ↫ "..lock_pin.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "الاشعارات" then if DevAbs:get(VoRTeX..'Abs:Lock:TagServr'..msg.chat_id_) then lock_tgservice = 'مقفوله' else lock_tgservice = 'مفتوحه' end local VoRTeX_dev = "\n" .."⌁︙الاشعارات ↫ "..lock_tgservice.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "الكلايش" then if DevAbs:get(VoRTeX..'Abs:Lock:Spam'..msg.chat_id_) then lock_spam = 'مقفوله' else lock_spam = 'مفتوحه' end local VoRTeX_dev = "\n" .."⌁︙الكلايش ↫ "..lock_spam.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "الدخول" then if DevAbs:get(VoRTeX..'Abs:Lock:Join'..msg.chat_id_) then lock_Join = 'مقفول' else lock_Join = 'مفتوح' end local VoRTeX_dev = "\n" .."⌁︙الدخول ↫ "..lock_Join.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "الشبكات" then if DevAbs:get(VoRTeX..'Abs:Lock:WebLinks'..msg.chat_id_) then lock_wp = 'مقفوله' else lock_wp = 'مفتوحه' end local VoRTeX_dev = "\n" .."⌁︙الشبكات ↫ "..lock_wp.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "المواقع" then if DevAbs:get(VoRTeX..'Abs:Lock:Location'..msg.chat_id_) then lock_location = 'مقفوله' else lock_location = 'مفتوحه' end local VoRTeX_dev = "\n" .."⌁︙المواقع ↫ "..lock_location.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "العربيه" then if DevAbs:get(VoRTeX..'Abs:Lock:Arabic'..msg.chat_id_) then lock_arabic = 'مقفوله' else lock_arabic = 'مفتوحه' end local VoRTeX_dev = "\n" .."⌁︙العربيه ↫ "..lock_arabic.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "الانكليزيه" then if DevAbs:get(VoRTeX..'Abs:Lock:English'..msg.chat_id_) then lock_english = 'مقفوله' else lock_english = 'مفتوحه' end local VoRTeX_dev = "\n" .."⌁︙الانكليزيه ↫ "..lock_english.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "الكفر" then if DevAbs:get(VoRTeX..'Abs:Lock:Kfr'..msg.chat_id_) then lock_kaf = 'مفتوح' else lock_kaf = 'مقفل' end local VoRTeX_dev = "\n" .."⌁︙الكفر ↫ "..lock_kaf.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "الفشار" then if DevAbs:get(VoRTeX..'Abs:Lock:Fshar'..msg.chat_id_) then lock_fshar = 'مفتوح' else lock_fshar = 'مقفل' end local VoRTeX_dev = "\n" .."⌁︙الفشار ↫ "..lock_fshar.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
+if text == "الطائفيه" then if DevAbs:get(VoRTeX..'Abs:Lock:Taf'..msg.chat_id_) then lock_taf = 'مفتوحه' else lock_taf = 'مقفله' end local VoRTeX_dev = "\n" .."⌁︙الطائفيه ↫ "..lock_taf.."\n" Dev_Abs(msg.chat_id_, msg.id_, 1, VoRTeX_dev, 1, 'md') end
 end
 --     Source VoRTeX     --
 if text == 'تفعيل كشف الاعدادات' and ChCheck(msg) then 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل كشف الاعدادات'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل كشف الاعدادات'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX..'Abs:LockSettings'..msg.chat_id_,true)  
 end
 if text == 'تعطيل كشف الاعدادات' and ChCheck(msg) then 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل كشف الاعدادات'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل كشف الاعدادات'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX..'Abs:LockSettings'..msg.chat_id_) 
 end
 --     Source VoRTeX     --
 if text == 'تفعيل اوامر التحشيش' and Manager(msg) and ChCheck(msg) then 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل اوامر التحشيش'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل اوامر التحشيش'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX..'Abs:Lock:Stupid'..msg.chat_id_)
 end
 if text == 'تعطيل اوامر التحشيش' and Manager(msg) and ChCheck(msg) then 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل اوامر التحشيش'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل اوامر التحشيش'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX..'Abs:Lock:Stupid'..msg.chat_id_,true)
 end
 --     Source VoRTeX     --
 if text and (text == 'تعطيل التحقق' or text == 'قفل التحقق' or text == 'تعطيل تنبيه الدخول') and Manager(msg) and ChCheck(msg) then 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل التحقق بنجاح'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل التحقق بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX..'Abs:Lock:Robot'..msg.chat_id_)
 end
 if text and (text == 'تفعيل التحقق' or text == 'فتح التحقق' or text == 'تفعيل تنبيه الدخول') and Manager(msg) and ChCheck(msg) then 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل التحقق بنجاح'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل التحقق بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX..'Abs:Lock:Robot'..msg.chat_id_,true)
 end
 --     Source VoRTeX     --
 if text == 'تفعيل ردود المدير' and Manager(msg) and ChCheck(msg) then 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل ردود المدير'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل ردود المدير'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX..'Abs:Lock:GpRed'..msg.chat_id_)
 end
 if text == 'تعطيل ردود المدير' and Manager(msg) and ChCheck(msg) then 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل ردود المدير'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل ردود المدير'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX..'Abs:Lock:GpRed'..msg.chat_id_,true)
 end
 --     Source VoRTeX     --
 if text == 'تفعيل ردود المطور' and Manager(msg) and ChCheck(msg) then 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل ردود المطور'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل ردود المطور'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX..'Abs:Lock:AllRed'..msg.chat_id_)
 end
 if text == 'تعطيل ردود المطور' and Manager(msg) and ChCheck(msg) then 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل ردود المطور'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل ردود المطور'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX..'Abs:Lock:AllRed'..msg.chat_id_,true)
 end
 --     Source VoRTeX     --
 if SecondSudo(msg) then
 if text == 'تفعيل المغادره' or text == '↫ تفعيل المغادره ⌁' then 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل المغادره بنجاح'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل المغادره بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX.."Abs:Left:Bot"..VoRTeX)
 end
 if text == 'تعطيل المغادره' or text == '↫ تعطيل المغادره ⌁' then 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل المغادره بنجاح'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل المغادره بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX.."Abs:Left:Bot"..VoRTeX,true) 
 end 
 if text == 'تفعيل الاذاعه' or text == '↫ تفعيل الاذاعه ⌁' then 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل الاذاعه بنجاح'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل الاذاعه بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX.."Abs:Send:Bot"..VoRTeX)
 end
 if text == 'تعطيل الاذاعه' or text == '↫ تعطيل الاذاعه ⌁' then 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل الاذاعه بنجاح'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل الاذاعه بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX.."Abs:Send:Bot"..VoRTeX,true) 
 end
 end
@@ -8959,8 +8959,8 @@ end
 if data.message_ == "CHAT_ADMIN_REQUIRED" then
 send(msg.chat_id_,msg.id_,"⌁︙ليست لدي صلاحية تغير معلومات المجموعه يرجى التحقق من الصلاحيات")  
 else
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تغير اسم المجموعه'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تغير اسم المجموعه'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 end
 end,nil) 
 end
@@ -8981,8 +8981,8 @@ if data.message_ == "CHAT_ADMIN_REQUIRED" then
 send(msg.chat_id_, msg.id_,"⌁︙ليست لدي صلاحية تغير معلومات المجموعه يرجى التحقق من الصلاحيات") 
 DevAbs:del(VoRTeX..'Abs:SetPhoto'..msg.chat_id_..':'..msg.sender_user_id_)
 else
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تغير صورة المجموعه'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تغير صورة المجموعه'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 end
 end,nil) 
 DevAbs:del(VoRTeX..'Abs:SetPhoto'..msg.chat_id_..':'..msg.sender_user_id_)
@@ -9008,8 +9008,8 @@ end
 tdcli_function({ID="UnpinChannelMessage",channel_id_ = msg.chat_id_:gsub("-100","")},function(arg,data) 
 if data.ID == "Ok" then
 DevAbs:del(VoRTeX..'Abs:PinnedMsg'..msg.chat_id_)
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم الغاء تثبيت الرساله'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم الغاء تثبيت الرساله'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 return false  
 end
 if data.code_ == 6 then
@@ -9030,8 +9030,8 @@ return false
 end
 tdcli_function({ID="UnpinChannelMessage",channel_id_ = msg.chat_id_:gsub("-100","")},function(arg,data) 
 if data.ID == "Ok" then
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم الغاء تثبيت الكل'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم الغاء تثبيت الكل'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 https.request('https://api.telegram.org/bot'..TokenBot..'/unpinAllChatMessages?chat_id='..msg.chat_id_)
 DevAbs:del(VoRTeX.."Abs:PinnedMsg"..msg.chat_id_)
 return false  
@@ -9055,8 +9055,8 @@ end
 local PinId = DevAbs:get(VoRTeX..'Abs:PinnedMsg'..msg.chat_id_)
 if PinId then
 Pin(msg.chat_id_,PinId,0)
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم اعادة تثبيت الرساله'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم اعادة تثبيت الرساله'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 end end
 end
 --     Source VoRTeX     --
@@ -9168,8 +9168,8 @@ if text == 'تفعيل البوت الخدمي' then
 if not Sudo(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙للمطور الاساسي فقط', 1, 'md')
 else 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل البوت الخدمي'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل البوت الخدمي'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX..'Abs:Lock:FreeBot'..VoRTeX) 
 end 
 end
@@ -9177,34 +9177,34 @@ if text == 'تعطيل البوت الخدمي' then
 if not Sudo(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙للمطور الاساسي فقط', 1, 'md')
 else 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل البوت الخدمي'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل البوت الخدمي'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX..'Abs:Lock:FreeBot'..VoRTeX,true) 
 end 
 end
 if ChatType == 'sp' or ChatType == 'gp'  then
 if text == 'تفعيل الالعاب' and Manager(msg) and ChCheck(msg) or text == 'تفعيل اللعبه' and Manager(msg) and ChCheck(msg) then   
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل الالعاب بنجاح'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل الالعاب بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX..'Abs:Lock:Games'..msg.chat_id_) 
 end
 if text == 'تعطيل الالعاب' and Manager(msg) and ChCheck(msg) or text == 'تعطيل اللعبه' and Manager(msg) and ChCheck(msg) then  
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل الالعاب بنجاح'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل الالعاب بنجاح'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX..'Abs:Lock:Games'..msg.chat_id_,true)  
 end
 if text == "تفعيل الرابط" or text == "تفعيل جلب الرابط" then 
 if Admin(msg) then
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل جلب رابط المجموعه'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تفعيل جلب رابط المجموعه'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:del(VoRTeX.."Abs:Lock:GpLinks"..msg.chat_id_)
 return false  
 end
 end
 if text == "تعطيل الرابط" or text == "تعطيل جلب الرابط" then 
 if Admin(msg) then
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل جلب رابط المجموعه'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم تعطيل جلب رابط المجموعه'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 DevAbs:set(VoRTeX.."Abs:Lock:GpLinks"..msg.chat_id_,"ok")
 return false  
 end
@@ -9400,8 +9400,8 @@ send(msg.chat_id_, msg.id_,"⌁︙الاذاعه معطله من قبل المط
 return false
 end
 DevAbs:setex(VoRTeX.."Abs:Send:Pv"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙ارسل لي سواء ↫ ⤈ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⌁︙للخروج ارسل ↫ ( الغاء ) \n ✓'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙ارسل لي سواء ↫ ⤈ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⌁︙للخروج ارسل ↫ ( الغاء ) \n ✓'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 return false
 end 
 if DevAbs:get(VoRTeX.."Abs:Send:Pv"..msg.chat_id_..":" .. msg.sender_user_id_) then 
@@ -9467,8 +9467,8 @@ send(msg.chat_id_, msg.id_,"⌁︙الاذاعه معطله من قبل المط
 return false
 end
 DevAbs:setex(VoRTeX.."Abs:Send:Gp"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙ارسل لي سواء ↫ ⤈ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⌁︙للخروج ارسل ↫ ( الغاء ) \n ✓'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙ارسل لي سواء ↫ ⤈ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⌁︙للخروج ارسل ↫ ( الغاء ) \n ✓'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 return false
 end 
 if DevAbs:get(VoRTeX.."Abs:Send:Gp"..msg.chat_id_..":" .. msg.sender_user_id_) then 
@@ -9534,8 +9534,8 @@ send(msg.chat_id_, msg.id_,"⌁︙الاذاعه معطله من قبل المط
 return false
 end
 DevAbs:setex(VoRTeX.."Abs:Send:FwdGp"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙ارسل الرساله الان لتوجيها \n⌁︙للخروج ارسل ↫ ( الغاء ) \n ✓'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙ارسل الرساله الان لتوجيها \n⌁︙للخروج ارسل ↫ ( الغاء ) \n ✓'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 return false
 end 
 if DevAbs:get(VoRTeX.."Abs:Send:FwdGp"..msg.chat_id_..":" .. msg.sender_user_id_) then 
@@ -9558,8 +9558,8 @@ send(msg.chat_id_, msg.id_,"⌁︙الاذاعه معطله من قبل المط
 return false
 end
 DevAbs:setex(VoRTeX.."Abs:Send:FwdPv"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙ارسل الرساله الان لتوجيها \n⌁︙للخروج ارسل ↫ ( الغاء ) \n ✓'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙ارسل الرساله الان لتوجيها \n⌁︙للخروج ارسل ↫ ( الغاء ) \n ✓'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 return false
 end 
 if DevAbs:get(VoRTeX.."Abs:Send:FwdPv"..msg.chat_id_..":" .. msg.sender_user_id_) then 
@@ -9582,8 +9582,8 @@ send(msg.chat_id_, msg.id_,"⌁︙الاذاعه معطله من قبل المط
 return false
 end
 DevAbs:setex(VoRTeX.."Abs:Send:Gp:Pin"..msg.chat_id_..":" .. msg.sender_user_id_, 600, true) 
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙ارسل لي سواء ↫ ⤈ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⌁︙للخروج ارسل ↫ ( الغاء ) \n ✓'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙ارسل لي سواء ↫ ⤈ \n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n⌁︙للخروج ارسل ↫ ( الغاء ) \n ✓'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 return false
 end 
 if DevAbs:get(VoRTeX.."Abs:Send:Gp:Pin"..msg.chat_id_..":" .. msg.sender_user_id_) then 
@@ -9918,8 +9918,8 @@ if not SecondSudo(msg) then
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙للمطور الاساسي فقط ', 1, 'md')
 else
 DevAbs:del(VoRTeX..'Abs:NameBot')
-local VoRTeXTEAM = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم حذف اسم البوت'
-absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeXTEAM, 14, string.len(msg.sender_user_id_))
+local VoRTeX_dev = '⌁︙اهلا عزيزي ↫ '..AbsRank(msg)..' \n⌁︙تم حذف اسم البوت'
+absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(msg.sender_user_id_))
 end end 
 --     Source VoRTeX     --
 if text and text:match("^استعاده الاوامر$") and SecondSudo(msg) or text and text:match("^استعادة كلايش الاوامر$") and SecondSudo(msg) then
@@ -9934,8 +9934,8 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "⌁︙ارسل كليشة (الاوامر) ا
 DevAbs:set(VoRTeX..'Abs:Help0'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
-local VoRTeXTEAM =  DevAbs:get(VoRTeX..'Abs:Help0'..msg.sender_user_id_)
-if VoRTeXTEAM == 'msg' then
+local VoRTeX_dev =  DevAbs:get(VoRTeX..'Abs:Help0'..msg.sender_user_id_)
+if VoRTeX_dev == 'msg' then
 Dev_Abs(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 DevAbs:del(VoRTeX..'Abs:Help0'..msg.sender_user_id_)
 DevAbs:set(VoRTeX..'Abs:Help', text)
@@ -9966,8 +9966,8 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "⌁︙ارسل كليشة (م1) الان " , 
 DevAbs:set(VoRTeX..'Abs:Help01'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
-local VoRTeXTEAM =  DevAbs:get(VoRTeX..'Abs:Help01'..msg.sender_user_id_)
-if VoRTeXTEAM == 'msg' then 
+local VoRTeX_dev =  DevAbs:get(VoRTeX..'Abs:Help01'..msg.sender_user_id_)
+if VoRTeX_dev == 'msg' then 
 Dev_Abs(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 DevAbs:del(VoRTeX..'Abs:Help01'..msg.sender_user_id_)
 DevAbs:set(VoRTeX..'Abs:Help1', text)
@@ -10035,8 +10035,8 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "⌁︙ارسل كليشة (م2) الان " , 
 DevAbs:set(VoRTeX..'Abs:Help21'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
-local VoRTeXTEAM =  DevAbs:get(VoRTeX..'Abs:Help21'..msg.sender_user_id_)
-if VoRTeXTEAM == 'msg' then
+local VoRTeX_dev =  DevAbs:get(VoRTeX..'Abs:Help21'..msg.sender_user_id_)
+if VoRTeX_dev == 'msg' then
 Dev_Abs(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 DevAbs:del(VoRTeX..'Abs:Help21'..msg.sender_user_id_)
 DevAbs:set(VoRTeX..'Abs:Help2', text)
@@ -10111,8 +10111,8 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "⌁︙ارسل كليشة (م3) الان " , 
 DevAbs:set(VoRTeX..'Abs:Help31'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
-local VoRTeXTEAM =  DevAbs:get(VoRTeX..'Abs:Help31'..msg.sender_user_id_)
-if VoRTeXTEAM == 'msg' then
+local VoRTeX_dev =  DevAbs:get(VoRTeX..'Abs:Help31'..msg.sender_user_id_)
+if VoRTeX_dev == 'msg' then
 Dev_Abs(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 DevAbs:del(VoRTeX..'Abs:Help31'..msg.sender_user_id_)
 DevAbs:set(VoRTeX..'Abs:Help3', text)
@@ -10176,8 +10176,8 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "⌁︙ارسل كليشة (م4) الان " , 
 DevAbs:set(VoRTeX..'Abs:Help41'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
-local VoRTeXTEAM =  DevAbs:get(VoRTeX..'Abs:Help41'..msg.sender_user_id_)
-if VoRTeXTEAM == 'msg' then
+local VoRTeX_dev =  DevAbs:get(VoRTeX..'Abs:Help41'..msg.sender_user_id_)
+if VoRTeX_dev == 'msg' then
 Dev_Abs(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 DevAbs:del(VoRTeX..'Abs:Help41'..msg.sender_user_id_)
 DevAbs:set(VoRTeX..'Abs:Help4', text)
@@ -10235,8 +10235,8 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "⌁︙ارسل كليشة (م5) الان " , 
 DevAbs:set(VoRTeX..'Abs:Help51'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
-local VoRTeXTEAM =  DevAbs:get(VoRTeX..'Abs:Help51'..msg.sender_user_id_)
-if VoRTeXTEAM == 'msg' then
+local VoRTeX_dev =  DevAbs:get(VoRTeX..'Abs:Help51'..msg.sender_user_id_)
+if VoRTeX_dev == 'msg' then
 Dev_Abs(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 DevAbs:del(VoRTeX..'Abs:Help51'..msg.sender_user_id_)
 DevAbs:set(VoRTeX..'Abs:Help5', text)
@@ -10321,8 +10321,8 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, "⌁︙ارسل كليشة (م6) الان " , 
 DevAbs:set(VoRTeX..'Abs:Help61'..msg.sender_user_id_, 'msg')
 return false end
 if text and text:match("^(.*)$") then
-local VoRTeXTEAM =  DevAbs:get(VoRTeX..'Abs:Help61'..msg.sender_user_id_)
-if VoRTeXTEAM == 'msg' then
+local VoRTeX_dev =  DevAbs:get(VoRTeX..'Abs:Help61'..msg.sender_user_id_)
+if VoRTeX_dev == 'msg' then
 Dev_Abs(msg.chat_id_, msg.id_, 1, text , 1, 'md')
 DevAbs:del(VoRTeX..'Abs:Help61'..msg.sender_user_id_)
 DevAbs:set(VoRTeX..'Abs:Help6', text)
@@ -10369,7 +10369,7 @@ if SecondSudo(msg) then
 if text == "تحديث السورس" or text == "تحديث سورس" then 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙جاري تحديث سورس فورتكس', 1, 'md') 
 os.execute('rm -rf VoRTeX.lua') 
-os.execute('wget https://raw.githubusercontent.com/VoRTeXTEAM/VoRTeX/main/VoRTeX.lua') 
+os.execute('wget https://raw.githubusercontent.com/VoR-TeXDeV/VoRTeX/main/VoRTeX.lua') 
 dofile('VoRTeX.lua') 
 io.popen("rm -rf ../.telegram-cli/*")
 print("\27[31;47m\n          ( تم تحديث السورس )          \n\27[0;34;49m\n") 
@@ -10405,7 +10405,7 @@ end
 send(msg.chat_id_, msg.id_,Files)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/VoRTeXTEAM/VoRTeXFiles/main/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/VoR-TeXDeV/VoRTeXFiles/main/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -10437,7 +10437,7 @@ end
 if text and text:match("^(تعطيل ملف) (.*)(.lua)$") then
 local FileGet = {string.match(text, "^(تعطيل ملف) (.*)(.lua)$")}
 local FileName = FileGet[2]..'.lua'
-local GetJson, Res = https.request("https://raw.githubusercontent.com/VoRTeXTEAM/VoRTeXFiles/main/VoRTeXFiles/"..FileName)
+local GetJson, Res = https.request("https://raw.githubusercontent.com/VoR-TeXDeV/VoRTeXFiles/main/VoRTeXFiles/"..FileName)
 if Res == 200 then
 os.execute("rm -fr Files/"..FileName)
 send(msg.chat_id_, msg.id_,"\n⌁︙الملف ↫ *"..FileName.."*\n⌁︙تم تعطيله وحذفه من البوت بنجاح") 
@@ -10449,7 +10449,7 @@ end
 if text and text:match("^(تفعيل ملف) (.*)(.lua)$") then
 local FileGet = {string.match(text, "^(تفعيل ملف) (.*)(.lua)$")}
 local FileName = FileGet[2]..'.lua'
-local GetJson, Res = https.request("https://raw.githubusercontent.com/VoRTeXTEAM/VoRTeXFiles/main/VoRTeXFiles/"..FileName)
+local GetJson, Res = https.request("https://raw.githubusercontent.com/VoR-TeXDeV/VoRTeXFiles/main/VoRTeXFiles/"..FileName)
 if Res == 200 then
 local ChekAuto = io.open("Files/"..FileName,'w+')
 ChekAuto:write(GetJson)
@@ -10708,7 +10708,7 @@ end
 --     Source VoRTeX     --
 end 
 ------------------------------------------------
--- This Source Was Developed By @OMMO10 .     --
+-- This Source Was Developed By @aanaaa .     --
 --   This Is The Source Channel @VoRTeX .    --
 --                - VoRTeX -                 --
 --        -- https://t.me/vortex_dev --          --
