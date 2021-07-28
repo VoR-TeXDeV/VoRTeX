@@ -4189,7 +4189,7 @@ Dev_Abs(msg.chat_id_, msg.id_, 1, '✰︙حسنا قم باعادة توجيه �
 end
 --     Source VoRTeX     --
 if text == "السورس" or text == "سورس" then 
-local text =  [[
+local Text = [[
 Welcome To Source
 ✰︙VoRTeX TEAM
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
@@ -4201,7 +4201,14 @@ Welcome To Source
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
 ✰︙[Tws VoRTeX](http://t.me/TWSIBRABOT)
 ]]
-Dev_Abs(msg.chat_id_, msg.id_, 1, text, 1, 'md')
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'Source Channel',url="t.me/vortex_dev"}},
+{{text = 'My Channel',url="t.me/tt3at"},{text = 'Developer',url="t.me/aanaaa"}},
+{{text = 'Source Group',url="t.me/xxxvxxt"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&voice=https://t.me/xxxvxxt/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 --     Source VoRTeX     --
 if ChatType == 'sp' or ChatType == 'gp'  then
@@ -4335,7 +4342,6 @@ end
 getUser(msg.sender_user_id_,get_firstname)
 end   
 --     Source VoRTeX     --
-if text == "اهمس" or text == "همسه" or text == "اريد بوت الهمسه" or text == "دزلي بوت الهمسه" or  text == "دزولي بوت الهمسه" then  Dev_Abs(msg.chat_id_, msg.id_, 1, '✰︙@HMSEBOT', 1, 'md') end
 if text == "رابط حذف" or text == "رابط الحذف" or text == "اريد رابط الحذف" or  text == "شمرلي رابط الحذف" or text == "اريد رابط حذف" then local inline = {{{text="اضغط هنا",url="https://t.me/DYFBOT"}}} SendInline(msg.chat_id_,'✰︙اضغط للحصول على الرابط',nil,inline) return false end
 if text == "بوت الحذف" or text == "اريد بوت الحذف" or text == "اريد بوت حذف" or text == "بوت حذف" or text == "بوت حذف حسابات" or text == "راح احذف" then local inline = {{{text="اضغط هنا",url="https://t.me/DYFBOT"}}} SendInline(msg.chat_id_,'✰︙اضغط للحصول على البوت',nil,inline) return false end
 if text == "جهاتي" and ChCheck(msg) or text == "اضافاتي" and ChCheck(msg) then add = (tonumber(DevAbs:get(VoRTeX..'Abs:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_)) or 0) Dev_Abs(msg.chat_id_, msg.id_, 1, "✰︙عدد جهاتك المضافه ↫ *❨ "..add.." ❩* ", 1, 'md') end
