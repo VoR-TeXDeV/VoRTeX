@@ -4205,10 +4205,10 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = 'Source Channel',url="t.me/vortex_dev"}},
 {{text = 'My Channel',url="t.me/tt3at"},{text = 'Developer',url="t.me/aanaaa"}},
-{{text = 'Source Group',url="t.me/xxxvxxt"}},
+{{text = 'Source Group',url="t.me/libya200k"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&voice=https://t.me/xxxvxxt/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id='..msg.chat_id_..'&photo=https://t.me/xxxvxxt/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 --     Source VoRTeX     --
 if ChatType == 'sp' or ChatType == 'gp'  then
