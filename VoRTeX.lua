@@ -1,6 +1,6 @@
 ------------------------------------------------
--- This Source Was Developed By (Abs) @BBB43.--
---   This Is The Source Channel @RR17D .   --
+-- This Source Was Developed By (Abs) @aanaaa.--
+--   This Is The Source Channel @tt3at .   --
 --                - VoRTeX -                 --
 --        -- https://t.me/VoRTeX_dev --         --
 ------------------------------------------------ 
@@ -645,7 +645,7 @@ end
 function ReplyStatus(msg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,dp) 
 if dp.first_name_ ~= false then
-local UserName = (dp.username_ or "RR17D")
+local UserName = (dp.username_ or "tt3at")
 for gmatch in string.gmatch(dp.first_name_, "[^%s]+") do
 dp.first_name_ = gmatch
 end
@@ -1582,19 +1582,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local mrAbs = DevAbs:get(VoRTeX.."Comd:New:rt:Abs:"..Dev_Abs..msg.chat_id_)
 if mrAbs == "مميز" and VipMem(msg) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'RR17D')..')'..' ❩\n᥀︙تم رفعه ❨ '..Dev_Abs..' ❩ بنجاح', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'tt3at')..')'..' ❩\n᥀︙تم رفعه ❨ '..Dev_Abs..' ❩ بنجاح', 1, 'md')
 DevAbs:set(VoRTeX.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,Dev_Abs) 
 DevAbs:sadd(VoRTeX..'Abs:VipMem:'..msg.chat_id_, result.sender_user_id_)
 elseif mrAbs == "ادمن" and Admin(msg) then 
-Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'RR17D')..')'..' ❩\n᥀︙تم رفعه ❨ '..Dev_Abs..' ❩ بنجاح', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'tt3at')..')'..' ❩\n᥀︙تم رفعه ❨ '..Dev_Abs..' ❩ بنجاح', 1, 'md')
 DevAbs:set(VoRTeX.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,Dev_Abs)
 DevAbs:sadd(VoRTeX..'Abs:Admins:'..msg.chat_id_, result.sender_user_id_)
 elseif mrAbs == "مدير" and Manager(msg) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'RR17D')..')'..' ❩\n᥀︙تم رفعه ❨ '..Dev_Abs..' ❩ بنجاح', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'tt3at')..')'..' ❩\n᥀︙تم رفعه ❨ '..Dev_Abs..' ❩ بنجاح', 1, 'md')
 DevAbs:set(VoRTeX.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,Dev_Abs)  
 DevAbs:sadd(VoRTeX..'Abs:Managers:'..msg.chat_id_, result.sender_user_id_)
 elseif mrAbs == "عضو" then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'RR17D')..')'..' ❩\n᥀︙تم رفعه ❨ '..Dev_Abs..' ❩ بنجاح', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'tt3at')..')'..' ❩\n᥀︙تم رفعه ❨ '..Dev_Abs..' ❩ بنجاح', 1, 'md')
 end
 end,nil)   
 end   
@@ -1608,19 +1608,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local mrAbs = DevAbs:get(VoRTeX.."Comd:New:rt:Abs:"..Dev_Abs..msg.chat_id_)
 if mrAbs == "مميز" and VipMem(msg) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'RR17D')..')'..' ❩\n᥀︙تم تنزيله ❨ '..Dev_Abs..' ❩ بنجاح', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'tt3at')..')'..' ❩\n᥀︙تم تنزيله ❨ '..Dev_Abs..' ❩ بنجاح', 1, 'md')
 DevAbs:srem(VoRTeX..'Abs:VipMem:'..msg.chat_id_, result.sender_user_id_)
 DevAbs:del(VoRTeX.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif mrAbs == "ادمن" and Admin(msg) then 
-Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'RR17D')..')'..' ❩\n᥀︙تم تنزيله ❨ '..Dev_Abs..' ❩ بنجاح', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'tt3at')..')'..' ❩\n᥀︙تم تنزيله ❨ '..Dev_Abs..' ❩ بنجاح', 1, 'md')
 DevAbs:srem(VoRTeX..'Abs:Admins:'..msg.chat_id_, result.sender_user_id_)
 DevAbs:del(VoRTeX.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif mrAbs == "مدير" and Manager(msg) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'RR17D')..')'..' ❩\n᥀︙تم تنزيله ❨ '..Dev_Abs..' ❩ بنجاح', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'tt3at')..')'..' ❩\n᥀︙تم تنزيله ❨ '..Dev_Abs..' ❩ بنجاح', 1, 'md')
 DevAbs:srem(VoRTeX..'Abs:Managers:'..msg.chat_id_, result.sender_user_id_)
 DevAbs:del(VoRTeX.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif mrAbs == "عضو" then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'RR17D')..')'..' ❩\n᥀︙تم تنزيله ❨ '..Dev_Abs..' ❩ بنجاح', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'tt3at')..')'..' ❩\n᥀︙تم تنزيله ❨ '..Dev_Abs..' ❩ بنجاح', 1, 'md')
 end
 end,nil)   
 end   
@@ -1634,19 +1634,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local mrAbs = DevAbs:get(VoRTeX.."Comd:New:rt:Abs:"..text1[2]..msg.chat_id_)
 if mrAbs == "مميز" and VipMem(msg) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'RR17D')..')'..' ❩\n᥀︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'tt3at')..')'..' ❩\n᥀︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevAbs:sadd(VoRTeX..'Abs:VipMem:'..msg.chat_id_, result.id_)
 DevAbs:set(VoRTeX.."Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif mrAbs == "ادمن" and Admin(msg) then 
-Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'RR17D')..')'..' ❩\n᥀︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'tt3at')..')'..' ❩\n᥀︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevAbs:sadd(VoRTeX..'Abs:Admins:'..msg.chat_id_, result.id_)
 DevAbs:set(VoRTeX.."Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif mrAbs == "مدير" and Manager(msg) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'RR17D')..')'..' ❩\n᥀︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'tt3at')..')'..' ❩\n᥀︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevAbs:sadd(VoRTeX..'Abs:Managers:'..msg.chat_id_, result.id_)
 DevAbs:set(VoRTeX.."Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif mrAbs == "عضو" then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'RR17D')..')'..' ❩\n᥀︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'tt3at')..')'..' ❩\n᥀︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 end
 else
 Dev_Abs(msg.chat_id_, msg.id_, 1, "᥀︙*المعرف غير صحيح*", 1, 'md')
@@ -1662,19 +1662,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local mrAbs = DevAbs:get(VoRTeX.."Comd:New:rt:Abs:"..text1[2]..msg.chat_id_)
 if mrAbs == "مميز" and VipMem(msg) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'RR17D')..')'..' ❩\n᥀︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'tt3at')..')'..' ❩\n᥀︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevAbs:srem(VoRTeX..'Abs:VipMem:'..msg.chat_id_, result.id_)
 DevAbs:del(VoRTeX.."Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif mrAbs == "ادمن" and Admin(msg) then 
-Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'RR17D')..')'..' ❩\n᥀︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'tt3at')..')'..' ❩\n᥀︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevAbs:srem(VoRTeX..'Abs:Admins:'..msg.chat_id_, result.id_)
 DevAbs:del(VoRTeX.."Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif mrAbs == "مدير" and Manager(msg) then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'RR17D')..')'..' ❩\n᥀︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'tt3at')..')'..' ❩\n᥀︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevAbs:srem(VoRTeX..'Abs:Managers:'..msg.chat_id_, result.id_)
 DevAbs:del(VoRTeX.."Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif mrAbs == "عضو" then
-Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'RR17D')..')'..' ❩\n᥀︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'tt3at')..')'..' ❩\n᥀︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 end
 else
 Dev_Abs(msg.chat_id_, msg.id_, 1, "᥀︙*المعرف غير صحيح*", 1, 'md')
@@ -1934,8 +1934,8 @@ if text == '/start' and ChCheck(msg) then
 if not DevAbs:get(VoRTeX..'Abs:Start:Time'..msg.sender_user_id_) then
 tdcli_function({ID="GetUser",user_id_=DevId},function(arg,dp) 
 local inline = {
-{{text="᥀ المطور .",url="t.me/"..(dp.username_ or "RR17D")}},
-{{text="᥀ السورس .",url="https://t.me/VoRTeX_dev"},{text="᥀ لتنصيب بوت .",url="https://t.me/BBB43"}},
+{{text="᥀ المطور .",url="t.me/"..(dp.username_ or "tt3at")}},
+{{text="᥀ السورس .",url="https://t.me/VoRTeX_dev"},{text="᥀ لتنصيب بوت .",url="https://t.me/aanaaa"}},
 }
 local start = DevAbs:get(VoRTeX.."Abs:Start:Bot")
 if start then 
@@ -1952,7 +1952,7 @@ end
 --     Source VoRTeX     --
 if not SecondSudo(msg) and not DevAbs:sismember(VoRTeX..'Abs:Ban:Pv',msg.sender_user_id_) and not DevAbs:get(VoRTeX..'Abs:Texting:Pv') then
 tdcli_function({ID="GetUser",user_id_=DevId},function(arg,chat) 
-Dev_Abs(msg.sender_user_id_, msg.id_, 1, '᥀︙تم ارسال رسالتك الى [المطور](t.me/'..(chat.username_ or "RR17D")..')', 1, 'md') 
+Dev_Abs(msg.sender_user_id_, msg.id_, 1, '᥀︙تم ارسال رسالتك الى [المطور](t.me/'..(chat.username_ or "tt3at")..')', 1, 'md') 
 tdcli_function({ID="ForwardMessages",chat_id_=DevId,from_chat_id_= msg.sender_user_id_,message_ids_={[0]=msg.id_},disable_notification_=1,from_background_=1},function(arg,data) 
 tdcli_function({ID="GetUser",user_id_=msg.sender_user_id_},function(arg,dp) 
 if data and data.messages_ and data.messages_[0] ~= false and data.ID ~= "Error" then
@@ -2078,7 +2078,7 @@ tdcli_function({ID="GetUser",user_id_=DevId},function(arg,result)
 local msg_id = msg.id_/2097152/0.5
 Text = "*᥀︙Dev Name ↬ * ["..result.first_name_.."](T.me/"..result.username_..")\n*᥀︙Dev User ↬* [@"..result.username_.."]"
 keyboard = {} 
-keyboard.inline_keyboard = {{{text = ''..result.first_name_..' ',url="t.me/"..result.username_ or RR17D}}}
+keyboard.inline_keyboard = {{{text = ''..result.first_name_..' ',url="t.me/"..result.username_ or tt3at}}}
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..result.username_..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end,nil)
 end
@@ -2139,7 +2139,7 @@ keyboard.inline_keyboard = {
 {{text="🦖 لعبة التنين 🦖",url='https://t.me/T4TTTTBOT?game=dragon'},{text="🐍 لعبة الافعى 🐍",url='https://t.me/T4TTTTBOT?game=snake'}},
 {{text="🔵 لعبة الالوان 🔴",url='https://t.me/T4TTTTBOT?game=color'}},
 {{text="🚀 لعبة الصاروخ 🚀",url='https://t.me/T4TTTTBOT?game=rocket'},{text="🏹 لعبة السهام 🏹",url='https://t.me/T4TTTTBOT?game=arrow'}},
-{{text = '᥀ VoRTeX Team .', url="t.me/RR17D"}},
+{{text = '᥀ VoRTeX Team .', url="t.me/tt3at"}},
 
 }
 local msg_id = msg.id_/2097152/0.5
@@ -2948,7 +2948,7 @@ Welcomes = '• نورت حبي \n• firstname \n• username'
 end
 local Welcomes = Welcomes:gsub('"',"") Welcomes = Welcomes:gsub("'","") Welcomes = Welcomes:gsub(",","") Welcomes = Welcomes:gsub("*","") Welcomes = Welcomes:gsub(";","") Welcomes = Welcomes:gsub("`","") Welcomes = Welcomes:gsub("{","") Welcomes = Welcomes:gsub("}","") 
 local Welcomes = Welcomes:gsub('firstname',('['..result.first_name_..']' or ''))
-local Welcomes = Welcomes:gsub('username',('[@'..result.username_..']' or '[@RR17D]'))
+local Welcomes = Welcomes:gsub('username',('[@'..result.username_..']' or '[@tt3at]'))
 Dev_Abs(msg.chat_id_, msg.id_, 1, Welcomes, 1, 'md')
 end 
 if DevAbs:get(VoRTeX.."Abs:Lock:Welcome"..msg.chat_id_) then
@@ -2996,7 +2996,7 @@ Welcomes = '• نورت حبي \n• firstname \n• username'
 end
 local Welcomes = Welcomes:gsub('"',"") Welcomes = Welcomes:gsub("'","") Welcomes = Welcomes:gsub(",","") Welcomes = Welcomes:gsub("*","") Welcomes = Welcomes:gsub(";","") Welcomes = Welcomes:gsub("`","") Welcomes = Welcomes:gsub("{","") Welcomes = Welcomes:gsub("}","") 
 local Welcomes = Welcomes:gsub('firstname',('['..msg.content_.members_[0].first_name_..']' or ''))
-local Welcomes = Welcomes:gsub('username',('[@'..msg.content_.members_[0].username_..']' or '[@RR17D]'))
+local Welcomes = Welcomes:gsub('username',('[@'..msg.content_.members_[0].username_..']' or '[@tt3at]'))
 Dev_Abs(msg.chat_id_, msg.id_, 1, Welcomes, 1, 'md')
 end
 --     Source VoRTeX     --
@@ -4471,7 +4471,7 @@ Welcome To Source
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '᥀ Source Channel',url="https://t.me/VoRTeX_dev"}},
-{{text = '᥀ Developer',url="t.me/BBB43"},{text = '᥀ Tws VoRTeX',url="https://t.me/Z66Z6bot"}},
+{{text = '᥀ Developer',url="t.me/aanaaa"},{text = '᥀ Tws VoRTeX',url="https://t.me/TWSIBRABOT"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/VoRTeX_dev&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -6594,7 +6594,7 @@ if dp.first_name_ == false then
 Dev_Abs(msg.chat_id_, msg.id_, 1, "᥀︙حساب المنشئ محذوف", 1, "md")
 return false  
 end
-local UserName = (dp.username_ or "RR17D")
+local UserName = (dp.username_ or "tt3at")
 Dev_Abs(msg.chat_id_, msg.id_, 1, "᥀︙مالك المجموعه ↫ ["..dp.first_name_.."](T.me/"..UserName..")", 1, "md")  
 end,nil)   
 end
@@ -6777,7 +6777,7 @@ if dp.first_name_ == false then
 Dev_Abs(msg.chat_id_, msg.id_, 1, "᥀︙حساب المنشئ محذوف", 1, "md")
 return false  
 end
-local UserName = (dp.username_ or "RR17D")
+local UserName = (dp.username_ or "tt3at")
 Dev_Abs(msg.chat_id_, msg.id_, 1, "᥀︙تم رفع مالك المجموعه ↫ ["..dp.first_name_.."](T.me/"..UserName..")", 1, "md") 
 DevAbs:sadd(VoRTeX.."Abs:AbsConstructor:"..msg.chat_id_,dp.id_)
 end,nil)   
@@ -9069,7 +9069,7 @@ if animation.Info == true then
 local Text ='*᥀︙تم اختيار المتحركه لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '᥀ VoRTeX Team .',url="t.me/RR17D"}},
+{{text = '᥀ VoRTeX Team .',url="t.me/tt3at"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation='..URL.escape(animation.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -9095,7 +9095,7 @@ if Audios.Info == true then
 local Text ='*᥀︙تم اختيار مقطع الميمز لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '᥀ VoRTeX Team .',url="t.me/RR17D"}},
+{{text = '᥀ VoRTeX Team .',url="t.me/tt3at"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(Audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -9121,7 +9121,7 @@ if Audios.Info == true then
 local Text ='*᥀︙تم اختيار المقطع الصوتي لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '᥀ VoRTeX Team .',url="t.me/RR17D"}},
+{{text = '᥀ VoRTeX Team .',url="t.me/tt3at"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(Audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -9147,7 +9147,7 @@ if Audios.Info == true then
 local Text ='*᥀︙تم اختيار الاغنيه لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '᥀ VoRTeX Team .',url="t.me/RR17D"}},
+{{text = '᥀ VoRTeX Team .',url="t.me/tt3at"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(Audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -9173,7 +9173,7 @@ if Audios.Info == true then
 local Text ='*᥀︙تم اختيار الريمكس لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '᥀ VoRTeX Team .',url="t.me/RR17D"}},
+{{text = '᥀ VoRTeX Team .',url="t.me/tt3at"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(Audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -9199,7 +9199,7 @@ if photo.Info == true then
 local Text ='*᥀︙تم اختيار الصوره لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '᥀ VoRTeX Team .',url="t.me/RR17D"}},
+{{text = '᥀ VoRTeX Team .',url="t.me/tt3at"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo='..URL.escape(photo.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -9225,7 +9225,7 @@ if photo.Info == true then
 local Text ='*᥀︙تم اختيار صورة الانمي لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '᥀ VoRTeX Team .',url="t.me/RR17D"}},
+{{text = '᥀ VoRTeX Team .',url="t.me/tt3at"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo='..URL.escape(photo.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -9251,7 +9251,7 @@ if photo.Info == true then
 local Text ='*᥀︙تم اختيار فلم لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '᥀ VoRTeX Team .',url="t.me/RR17D"}},
+{{text = '᥀ VoRTeX Team .',url="t.me/tt3at"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo='..URL.escape(photo.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -9277,7 +9277,7 @@ if photo.Info == true then
 local Text ='*᥀︙تم اختيار مسلسل لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '᥀ VoRTeX Team .',url="t.me/RR17D"}},
+{{text = '᥀ VoRTeX Team .',url="t.me/tt3at"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo='..URL.escape(photo.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -9558,7 +9558,7 @@ local TkeedList = DevAbs:scard(VoRTeX.."Abs:Abs:Tkeed:"..ChatId) or 0
 local AdminsList = DevAbs:scard(VoRTeX.."Abs:Admins:"..ChatId) or 0
 local VipList = DevAbs:scard(VoRTeX.."Abs:VipMem:"..ChatId) or 0
 local LinkGp = json:decode(https.request('https://api.telegram.org/bot'..TokenBot..'/exportChatInviteLink?chat_id='..ChatId))
-if LinkGp.ok == true then LinkGroup = LinkGp.result else LinkGroup = 't.me/RR17D' end
+if LinkGp.ok == true then LinkGroup = LinkGp.result else LinkGroup = 't.me/tt3at' end
 tdcli_function({ID ="GetChat",chat_id_=ChatId},function(arg,dp)
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = ChatId:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 100},function(arg,data) 
 if dp.id_ then
@@ -9568,7 +9568,7 @@ if data.members_[i].status_.ID == "ChatMemberStatusCreator" then
 Manager_id = admins[i].user_id_
 tdcli_function ({ID = "GetUser",user_id_ = Manager_id},function(arg,Abs) 
 if Abs.first_name_ ~= false then
-ConstructorAbs = "["..Abs.first_name_.."](T.me/"..(Abs.username_ or "RR17D")..")"
+ConstructorAbs = "["..Abs.first_name_.."](T.me/"..(Abs.username_ or "tt3at")..")"
 else 
 ConstructorAbs = "حساب محذوف"
 end
@@ -10845,7 +10845,7 @@ if SecondSudo(msg) then
 if text == "تحديث السورس" and ChCheck(msg) or text == "تحديث سورس" and ChCheck(msg) or text == "↫ تحديث السورس ᥀" and ChCheck(msg) then 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '᥀︙جاري تحديث سورس فورتكس', 1, 'md') 
 os.execute('rm -rf VoRTeX.lua') 
-os.execute('wget https://raw.githubusercontent.com/VoRTeX_dev/VoRTeX/main/VoRTeX.lua') 
+os.execute('wget https://raw.githubusercontent.com/VoR-TeXDeV/VoRTeX/main/VoRTeX.lua') 
 dofile('VoRTeX.lua') 
 io.popen("rm -rf ../.telegram-cli/*")
 print("\27[31;47m\n          ( تم تحديث السورس )          \n\27[0;34;49m\n") 
@@ -10926,7 +10926,7 @@ end
 send(msg.chat_id_, msg.id_,Files)
 end
 if text == "متجر الملفات" and ChCheck(msg) or text == 'المتجر' and ChCheck(msg) or text == '↫  المتجر ᥀' and ChCheck(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/VoRTeX_dev/VoRTeXFiles/main/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/VoR-TeXDeV/VoRTeXFiles/main/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -10958,7 +10958,7 @@ end
 if text and text:match("^(تعطيل ملف) (.*)(.lua)$") and ChCheck(msg) then
 local FileGet = {string.match(text, "^(تعطيل ملف) (.*)(.lua)$")}
 local FileName = FileGet[2]..'.lua'
-local GetJson, Res = https.request("https://raw.githubusercontent.com/VoRTeX_dev/VoRTeXFiles/main/VoRTeXFiles/"..FileName)
+local GetJson, Res = https.request("https://raw.githubusercontent.com/VoR-TeXDeV/VoRTeXFiles/main/VoRTeXFiles/"..FileName)
 if Res == 200 then
 os.execute("rm -fr Files/"..FileName)
 send(msg.chat_id_, msg.id_,"\n᥀︙الملف ↫ *"..FileName.."*\n᥀︙تم تعطيله وحذفه من البوت بنجاح") 
@@ -10970,7 +10970,7 @@ end
 if text and text:match("^(تفعيل ملف) (.*)(.lua)$") and ChCheck(msg) then
 local FileGet = {string.match(text, "^(تفعيل ملف) (.*)(.lua)$")}
 local FileName = FileGet[2]..'.lua'
-local GetJson, Res = https.request("https://raw.githubusercontent.com/VoRTeX_dev/VoRTeXFiles/main/VoRTeXFiles/"..FileName)
+local GetJson, Res = https.request("https://raw.githubusercontent.com/VoR-TeXDeV/VoRTeXFiles/main/VoRTeXFiles/"..FileName)
 if Res == 200 then
 local ChekAuto = io.open("Files/"..FileName,'w+')
 ChekAuto:write(GetJson)
@@ -11101,7 +11101,7 @@ Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '᥀ قناة السورس',url="t.me/RR17D"}},
+{{text = '᥀ قناة السورس',url="t.me/tt3at"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/VoRTeX_dev&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -11110,11 +11110,11 @@ end
 --     Source VoRTeX     --
 if text == "مبرمج السورس" and ChCheck(msg) or text == "مطور السورس" and ChCheck(msg) or text == "وين المبرمج" and ChCheck(msg) or text == "المبرمج" and ChCheck(msg) or text == "↫ مبرمج السورس ᥀" and ChCheck(msg) then
 Text = [[
-᥀︙[مبرمج السورس](https://t.me/BBB43)
+᥀︙[مبرمج السورس](https://t.me/aanaaa)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '᥀ مبرمج السورس',url="t.me/BBB43"}},
+{{text = '᥀ مبرمج السورس',url="t.me/aanaaa"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/W55555&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -11250,8 +11250,8 @@ end
 --     Source VoRTeX     --
 end 
 ------------------------------------------------
--- This Source Was Developed By (Abs) @BBB43.--
---   This Is The Source Channel @RR17D .   --
+-- This Source Was Developed By (Abs) @aanaaa.--
+--   This Is The Source Channel @tt3at .   --
 --                - VoRTeX -                 --
 --        -- https://t.me/VoRTeX_dev --         --
 ------------------------------------------------  
