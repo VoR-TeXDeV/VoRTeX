@@ -9062,7 +9062,7 @@ Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(
 DevAbs:set(VoRTeX..'Abs:gif:Abs'..msg.chat_id_,true)  
 end
 if text == "متحركه" or text == "↫ متحركه ᥀" and not DevAbs:get(VoRTeX..'Abs:gif:Abs'..msg.chat_id_) and ChCheck(msg) then
-data,res = https.request('https://ccccxcc.ml/VoRTeX/animation.php')
+data,res = https.request('https://ccccxcc.ml/David/animation.php')
 if res == 200 then
 animation = json:decode(data)
 if animation.Info == true then
@@ -9088,7 +9088,7 @@ Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(
 DevAbs:set(VoRTeX..'Abs:memz:Abs'..msg.chat_id_,true)  
 end
 if text == "ميمز" or text == "↫ ميمز ᥀" and not DevAbs:get(VoRTeX..'Abs:memz:Abs'..msg.chat_id_) and ChCheck(msg) then
-data,res = https.request('https://ccccxcc.ml/VoRTeX/memz.php')
+data,res = https.request('https://ccccxcc.ml/David/memz.php')
 if res == 200 then
 Audios = json:decode(data)
 if Audios.Info == true then
@@ -9114,7 +9114,7 @@ Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(
 DevAbs:set(VoRTeX..'Abs:Audios:Abs'..msg.chat_id_,true)  
 end
 if text == "غنيلي" or text == "↫ غنيلي ᥀" and not DevAbs:get(VoRTeX..'Abs:Audios:Abs'..msg.chat_id_) and ChCheck(msg) then
-data,res = https.request('https://ccccxcc.ml/VoRTeX/Audios.php')
+data,res = https.request('https://ccccxcc.ml/David/Audios.php')
 if res == 200 then
 Audios = json:decode(data)
 if Audios.Info == true then
@@ -9140,7 +9140,7 @@ Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(
 DevAbs:set(VoRTeX..'Abs:mp3:Abs'..msg.chat_id_,true)  
 end
 if text == "اغنيه" or text == "↫ اغنيه ᥀" or text == "اغاني" and not DevAbs:get(VoRTeX..'Abs:mp3:Abs'..msg.chat_id_) and ChCheck(msg) then
-data,res = https.request('https://ccccxcc.ml/VoRTeX/mp3.php')
+data,res = https.request('https://ccccxcc.ml/David/mp3.php')
 if res == 200 then
 Audios = json:decode(data)
 if Audios.Info == true then
@@ -9166,7 +9166,7 @@ Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(
 DevAbs:set(VoRTeX..'Abs:Remix:Abs'..msg.chat_id_,true)  
 end
 if text == "ريمكس" or text == "↫ ريمكس ᥀" and not DevAbs:get(VoRTeX..'Abs:Remix:Abs'..msg.chat_id_) and ChCheck(msg) then
-data,res = https.request('https://ccccxcc.ml/VoRTeX/Remix.php')
+data,res = https.request('https://ccccxcc.ml/David/Remix.php')
 if res == 200 then
 Audios = json:decode(data)
 if Audios.Info == true then
@@ -9192,7 +9192,7 @@ Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(
 DevAbs:set(VoRTeX..'Abs:Photo:Abs'..msg.chat_id_,true)  
 end
 if text == "صوره" or text == "↫ صوره ᥀" and not DevAbs:get(VoRTeX..'Abs:Photo:Abs'..msg.chat_id_) and ChCheck(msg) then
-data,res = https.request('https://ccccxcc.ml/VoRTeX/Photo.php')
+data,res = https.request('https://ccccxcc.ml/David/Photo.php')
 if res == 200 then
 photo = json:decode(data)
 if photo.Info == true then
@@ -9218,7 +9218,7 @@ Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(
 DevAbs:set(VoRTeX..'Abs:Anime:Abs'..msg.chat_id_,true)  
 end
 if text == "انمي" or text == "↫ انمي ᥀" and not DevAbs:get(VoRTeX..'Abs:Anime:Abs'..msg.chat_id_) and ChCheck(msg) then
-data,res = https.request('https://ccccxcc.ml/VoRTeX/Anime.php')
+data,res = https.request('https://ccccxcc.ml/David/Anime.php')
 if res == 200 then
 photo = json:decode(data)
 if photo.Info == true then
@@ -9244,7 +9244,7 @@ Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(
 DevAbs:set(VoRTeX..'Abs:Movies:Abs'..msg.chat_id_,true)  
 end
 if text == "فلم" or text == "↫ فلم ᥀" and not DevAbs:get(VoRTeX..'Abs:Movies:Abs'..msg.chat_id_) and ChCheck(msg) then
-data,res = https.request('https://ccccxcc.ml/VoRTeX/Movies.php')
+data,res = https.request('https://ccccxcc.ml/David/Movies.php')
 if res == 200 then
 photo = json:decode(data)
 if photo.Info == true then
@@ -9270,7 +9270,7 @@ Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(
 DevAbs:set(VoRTeX..'Abs:Series:Abs'..msg.chat_id_,true)  
 end
 if text == "مسلسل" or text == "↫ مسلسل ᥀" and not DevAbs:get(VoRTeX..'Abs:Series:Abs'..msg.chat_id_) and ChCheck(msg) then
-data,res = https.request('https://ccccxcc.ml/VoRTeX/Series.php')
+data,res = https.request('https://ccccxcc.ml/David/Series.php')
 if res == 200 then
 photo = json:decode(data)
 if photo.Info == true then
