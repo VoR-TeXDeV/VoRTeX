@@ -9114,7 +9114,7 @@ Absmoned(msg.chat_id_, msg.sender_user_id_, msg.id_, VoRTeX_dev, 14, string.len(
 DevAbs:set(VoRTeX..'Abs:Audios:Abs'..msg.chat_id_,true)  
 end
 if text == "غنيلي" or text == "↫ غنيلي ᥀" and not DevAbs:get(VoRTeX..'Abs:Audios:Abs'..msg.chat_id_) and ChCheck(msg) then
-data,res = https.request('https://ccccxcc.ml/David/Audios.php')
+data,res = https.request('https://black-source.tk/BlackTeAM/audios.php')
 if res == 200 then
 Audios = json:decode(data)
 if Audios.Info == true then
