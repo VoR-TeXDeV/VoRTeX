@@ -4,7 +4,7 @@ Version=`lsb_release -rs | cut -f1 -d"."`
 install() {
 echo -e "\033[0;36m"
 echo -e "~ Welcome To Source VoRTeX - اهلا بك في سورس فورتكس ~"
-echo -e "     ~ { Setting Up Offices - جارٍ رفع المكاتب } ~"
+echo -e "     ~ { Setting Up Offices - جاري رفع المكاتب } ~"
 echo -e "\033[0m"
 sudo apt-get update -y
 sudo apt-get upgrade -y
@@ -14,13 +14,13 @@ sudo apt-get install tmux -y
 sudo apt-get install dnsutils -y
 sudo apt-get install software-properties-common -y
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
-sudo apt-get install libreadline-dev -y libconfig-dev -y libssl-dev -y lua5.2 -y liblua5.2-dev -y lua-socket -y lua-sec -y lua-expat -y libevent-dev -y make unzip git redis-server autoconf g++ -y libjansson-dev -y libpython-dev -y expat libexpat1-dev -y curl -y htop -y wget -y
 if [ "$Version" == "18" ]; then
-echo -e "\033[0;31m\n~ Installing Depedencies For Ubuntu 18... \n\033[0m"
 cd /lib/x86_64-linux-gnu/ && sudo ln -s libreadline.so.7.0 libreadline.so.6
-wget "apiabs.ml/installubuntu18/compat-libevent2-5_2.0.21-1ubuntu18_amd64.deb" && sudo dpkg -i compat-libevent2-5_2.0.21-1ubuntu18_amd64.deb
+wget "th3boss.com/installubuntu18/compat-libevent2-5_2.0.21-1ubuntu18_amd64.deb" && sudo dpkg -i compat-libevent2-5_2.0.21-1ubuntu18_amd64.deb
 rm compat-libevent2-5_2.0.21-1ubuntu18_amd64.deb
+cd 
 fi
+sudo apt-get install libreadline-dev -y libconfig-dev -y libssl-dev -y lua5.2 -y liblua5.2-dev -y lua-socket -y lua-sec -y lua-expat -y libevent-dev -y make unzip git redis-server autoconf g++ -y libjansson-dev -y libpython-dev -y expat libexpat1-dev -y curl -y htop -y wget -y
 sudo apt-get install screen -y
 sudo apt-get install libconfig++9v5 -y 
 sudo apt-get install libstdc++6 -y
@@ -43,7 +43,11 @@ sudo luarocks install luautf8
 cd .. ;sudo rm -rf luarocks*
 sudo timedatectl set-timezone Asia/Baghdad
 echo -e "\033[0;36m"
-echo -e "-------------Welcome to source-------------"
+echo -e "--------------------------------------------------"
+echo -e "|This Source Was Developed By (ABS) @abbasfadhil.|"
+echo -e "|    This Is The Source Channel @VoRTeX_DeV .    |"
+echo -e "|                   - VoRTeX -                   |"
+echo -e "--------------------------------------------------"
 echo -e "\033[0m"
 cd $THIS_DIR && sudo chmod +x tg
 lua VoRTeX.lua
