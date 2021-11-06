@@ -5074,6 +5074,12 @@ ReplyStatus(msg,msg.sender_user_id_,"WrongWay","✯︙ممنوع التكلم ب
 end end
 --     Source VoRTeX     --
 if SecondSudo(msg) then
+if text == 'جلب ملف السورس' then
+if not Sudo(msg) then
+Dev_Abs(msg.chat_id_, msg.id_, 1, '✯︙للمطور الاساسي فقط ', 1, 'md')
+else
+sendDocument(msg.chat_id_, msg.id_, 0, 1, nil, './VoRTeX.lua', '✯︙نسخة ملف سورس وطن',dl_cb, nil)
+end end
 if text == 'جلب نسخه الكروبات' and ChCheck(msg) or text == 'جلب نسخه احتياطيه' and ChCheck(msg) or text == 'جلب النسخه الاحتياطيه' and ChCheck(msg) or text == '↫ جلب نسخه احتياطيه ✯' and ChCheck(msg) then
 local List = DevAbs:smembers(VoRTeX..'Abs:Groups') 
 local BotName = (DevAbs:get(VoRTeX.."Abs:NameBot") or 'فورتكس')
